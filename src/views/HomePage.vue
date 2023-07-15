@@ -78,7 +78,7 @@ them to succeed in their future.</p2>
         <i class="bi bi-geo-alt"></i>
       </a>
         
-    <p3>ay Us a Visit</p3>
+    <p3>Pay Us a Visit</p3>
 
     </div>
     <div class="col">
