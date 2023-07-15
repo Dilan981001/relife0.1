@@ -1,13 +1,17 @@
 <template>
-$END$
+  <div>
+    <q-page-container>
+    <parent-dash />
+    </q-page-container>
+  </div>
 </template>
 
 <script>
+import ParentDash from "@/components/ParentDash.vue";
+
 export default {
-name: "FullDashBoard"
+  components: {
+    ParentDash
+  }
 }
 </script>
-
-<style scoped>
-
-</style>

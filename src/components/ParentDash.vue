@@ -1,23 +1,29 @@
 <template>
-  <q-layout view="lHh Lpr lFf" style="height: 100vh;">
-    <router-view>
+  <q-layout view="lHh Lpr lFf">
+    <q-page-container>
       <SideBar />
-      <RightSideBar />
-      <DashBoard />
-    </router-view>
+
+      <DashBoard/>
+      <router-view />
+    </q-page-container>
   </q-layout>
 </template>
 
 <script>
 import SideBar from "@/components/SideBar.vue";
-import RightSideBar from "@/components/RightSideBar.vue";
+
 import DashBoard from "@/components/DashBoard.vue";
 
 export default {
   components: {
+    DashBoard,
     SideBar,
-    RightSideBar,
-    DashBoard
+
+  },
+  setup () {
+    return {
+
+    }
   }
-};
+}
 </script>
