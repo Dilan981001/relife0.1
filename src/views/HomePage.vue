@@ -7,7 +7,10 @@
             <q-btn to="/home" label="HOME" class="q-mr-md" />
           </div>
           <div class="form-actions">
-            <q-btn label="ABOUT US" class="q-mr-md" />
+            <q-btn label="Elder's Home" class="q-mr-md" />
+          </div>
+          <div class="form-actions">
+            <q-btn label="Children's Home" class="q-mr-md" />
           </div>
           <div class="form-actions">
             <q-btn label="NOTIFICATIONS" class="q-mr-md"/>
@@ -17,6 +20,10 @@
           </div>
           <div class="form-actions">
             <q-btn to="/marketplace" label="MarketPlace" class="q-mr-md" />
+          </div>
+          <div class="q-gutter-auto"></div> <!-- Empty div for spacing -->
+          <div class="form-actions">
+            <q-btn to="/signin" label="Sign in / Sign up" />
           </div>
 
         </q-btn-group>
