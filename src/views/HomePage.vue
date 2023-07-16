@@ -13,7 +13,7 @@
             <q-btn to="/home" label="HOME" class="q-mr-md" />
           </div>
           <div class="form-actions">
-            <q-btn label="ABOUT US" class="q-mr-md" />
+          
             <div class="form-actions">
             <q-btn label="Elder's Home" class="q-mr-md" />
           </div>
