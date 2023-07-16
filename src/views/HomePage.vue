@@ -495,13 +495,18 @@ libero justo laoreet sit amet vitae.
   align-content: center;
   }
   .img1{
-    border-radius: 40px 40px 40px 120px;
-    width: 80%;
+    width: 75%;
     height: auto;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 370px;
+    border-top-left-radius: 150px;
+    border: 25px solid #00000040; /* Replace #000 with your desired border color */
+    
   }
   .rec2 {
   border-radius: 25px;
-  background:black;
+  background:rgba(0, 0, 0, 0.338);
   padding: 20px;
   height: 100px;
   font-family: "Montserrat";
