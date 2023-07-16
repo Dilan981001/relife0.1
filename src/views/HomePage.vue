@@ -11,6 +11,12 @@
           <div class="form-actions">
             <q-btn to="/home" label="HOME" class="q-mr-md" />
           </div>
+          <div class="form-actions">
+            <q-btn to="/home" label="Elder's home" class="q-mr-md" />
+          </div>
+          <div class="form-actions">
+            <q-btn to="/home" label="children's home" class="q-mr-md" />
+          </div>
 
           <div class="form-actions">
             <q-btn label="NOTIFICATIONS" class="q-mr-md" />
