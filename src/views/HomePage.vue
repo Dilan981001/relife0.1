@@ -1,9 +1,20 @@
 <template> 
 <div class="background">
+  <div class="box1">
+  </div>
   <div class="top-panel">
         <q-btn-group flat >
+<<<<<<< Updated upstream
           <q-img src="relife3.ico" width="60px" height="35px" class="q-mr-md" />
           <div class="form-actions">
+=======
+          <div class="left-panel">
+            <q-img src="relife3.ico" width="95px" height="54px" class="q-mr-md" />
+          </div>
+          
+          <div class="right-panel">
+            <div class="form-actions">
+>>>>>>> Stashed changes
             <q-btn to="/home" label="HOME" class="q-mr-md" />
           </div>
         
@@ -16,47 +27,82 @@
           <div class="form-actions">
             <q-btn to="/marketplace" label="MarketPlace" class="q-mr-md" />
           </div>
+          <div class="form-actions">
+            <q-btn to="/signin" label="Sign in / Sign up " class="q-mr-md" />
+          </div>
 
         </q-btn-group>
       </div>
-      <hr class="horizontal-line">
+     
+      <div class="box2">
+      </div>
 
-<div class="p-3 mb-2 bg-success text-white">
- <div class="container text-center " >
-  <div class="row">
-    <div class="col">
-        <div class="r1">
-            <p1>Provide Refuge to</p1>
-            <br>
-      <p1>The Abandoned People</p1>
-    </div>
-        <div class="row">
-            <p2>Help Abandoned people to build their life with your help by giving 
-refuge and new life from beginning  with your support and
-let us step into a better society by showing our heartfelt love and helping 
-them to succeed in their future.</p2>
-
+      <div class="p-3 mb-2 bg-success text-white">
+        <div class="container text-left">
+          <div class="row">
+            <div class="col">
+              <div class="r1 text-left ml-4">
+                <p1 class="h1">Provide Refuge to</p1>
+                <br>
+                <p1 class="h1">The Abandoned People</p1>
+              </div>
+              <div class="row2">
+                <div class="col2">
+                  <p2 class="text-left ml-4 mt-4 mb-0">Help abandoned people to build their lives with your help by providing refuge and a fresh start. Support them to succeed in their future and let's create a better society by showing our heartfelt love.</p2>
+                </div>
+              </div>
+              <div class="row3">
+                <div class="col3">
+                  <br><br>
+                  <q-btn class="rec1" role="button">Join and help them</q-btn>
+                </div>
+                <div class="col align-self-center">
+                  <a class="btn btn-outline-light btn-floating m-1 float-right" href="#!" role="button">
+                    <i class="bi bi-arrow-right-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <img src="i1.jpeg" class="img1" alt="img1" width="400" height="300">
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="rec2">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <a class="rec" href="#!" role="button">
+                    <i class="bi bi-geo-alt"></i>
+                  </a>
+                  <p3>Pay Us a Visit</p3>
+                </div>
+                <div class="col">
+                  <div type="label">
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                      <i class="bi bi-telephone"></i>
+                    </a>
+                    <p3>Give Us a Call</p3><br>
+                    <p4>+94702516984</p4>
+                  </div>
+                </div>
+                <div class="col">
+                  <div type="label">
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                      <i class="bi bi-envelope"></i>
+                    </a>
+                    <p3>Send Us a Message</p3><br>
+                    <p4>reelife001@gmail.com</p4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col">
-              <br><br>
-
-              
-              <a class="rec1" role="button" >Join and help them</a>
-            </div>
-            <div class="col">
-              <br><br>
-              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" >
-                <i class="bi bi-arrow-right-circle"></i>
-      </a>
-            </div>
-            <div class="col">
-             
-            </div>
-            
-            
-        </div>
+      </div>
       
+<<<<<<< Updated upstream
     </div>
     <div class="col">
             <img src="i1.jpeg" class="img1" alt="img1" width="300" height="300">  
@@ -103,6 +149,8 @@ them to succeed in their future.</p2>
 
 </div>
 </div>
+=======
+>>>>>>> Stashed changes
 <hr class="horizontal-line">
 
     
@@ -466,8 +514,11 @@ libero justo laoreet sit amet vitae.
   
   background-color: #284b36;
   
+  
 }
-
+.col2{
+  margin-top: 20px;
+}
 
 
 .horizontal-line {
@@ -475,21 +526,40 @@ libero justo laoreet sit amet vitae.
   margin: 50px 0; /* Adjust the margin as needed */
   background: #284b36;
 }
-
+.box2{
+  margin-bottom: 70px; /* Adds margin space at the bottom of the box */
+  padding: 20px; /* Adds padding space inside the box */
+  margin-top: 50px;
+}
+.box1{
+ /* Adds margin space at the bottom of the box */
+  padding: 7px;
+}
 .form-actions {
   display: flex;
   justify-content: space-between;
 }
+.col{
+  padding-left: 100px;
+  padding-right: 50px;
+}
+.q-mr-md-d-d
+{
+  font-weight: bold;
+  background: #284b36;
+  color: #ffffff;
+}
 
 .rec1 {
   border-radius: 25px;
-  background: white;
-  padding: 20px;
-  width: 150px;
-  height: 80px;
+  background: #284b36;
+  padding: 10px;
+  width: 250px;
+  height: 50px;
   font-family: "Montserrat";
-  font-size: 20px; 
-  color: black;
+  font-size: 15px; 
+  font-weight: bold;
+  color: rgb(255, 255, 255);
   align-content: center;
   }
   .img1{
@@ -502,6 +572,27 @@ libero justo laoreet sit amet vitae.
     border: 25px solid #00000040; /* Replace #000 with your desired border color */
     
   }
+  .img2{
+    
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    height: auto;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 250px;
+    border: 25px solid #00000040; /* Replace #000 with your desired border color */
+    
+  }
+  .q-mr-md{
+    margin-left:5px;
+    }
+    .q-mr-md-d{
+      font-weight: bold;
+      color: #ffffff;
+      background: #284b36;
+    }
   .rec2 {
   border-radius: 25px;
   background:rgba(0, 0, 0, 0.338);
@@ -511,6 +602,9 @@ libero justo laoreet sit amet vitae.
   font-size: 25px; 
   color: black;
   align-content: center;
+  }
+  .h1{
+    border-left-width: 20px;
   }
   .horizontal-line {
   border: none;
@@ -531,13 +625,7 @@ h2{
   text-align: justify;
 }
 
-.img2{
-    border-radius: 120px 40px 120px 40px;
-    display: inline-block;
-    width: 80%;
-    height: auto;
-    
-  }
+
   .rec3 {
   border-radius: 25px;
   padding: 20px;
@@ -615,10 +703,12 @@ h2{
   background: #284b36;
 }
 
-
-
-
-
+<<<<<<< Updated upstream
+=======
+.right-panel{
+  margin-left: 270px;
+  display: flex;
+>>>>>>> Stashed changes
 
 
 h6{
