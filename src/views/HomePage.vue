@@ -2,11 +2,19 @@
 <div class="background">
   <div class="top-panel">
         <q-btn-group flat >
-          <q-img src="relife3.ico" width="60px" height="35px" class="q-mr-md" />
-          <div class="form-actions">
+          <div class="left-panel">
+            <q-img src="relife3.ico" width="60px" height="35px" class="q-mr-md" />
+          
+
+          </div>
+          
+          <div class="right-panel">
+            <div class="form-actions">
             <q-btn to="/home" label="HOME" class="q-mr-md" />
           </div>
           <div class="form-actions">
+            <q-btn label="ABOUT US" class="q-mr-md" />
+            <div class="form-actions">
             <q-btn label="Elder's Home" class="q-mr-md" />
           </div>
           <div class="form-actions">
@@ -21,11 +29,10 @@
           <div class="form-actions">
             <q-btn to="/marketplace" label="MarketPlace" class="q-mr-md" />
           </div>
-          <div class="q-gutter-auto"></div> <!-- Empty div for spacing -->
-          <div class="form-actions">
-            <q-btn to="/signin" label="Sign in / Sign up" />
-          </div>
 
+          </div>
+         
+</div>
         </q-btn-group>
       </div>
       <hr class="horizontal-line">
@@ -619,7 +626,11 @@ h2{
   background: #284b36;
 }
 
+.right-panel{
+  margin-left: 500px;
+  display: flex;
 
+}
 
 
 
