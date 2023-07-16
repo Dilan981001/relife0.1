@@ -12,16 +12,13 @@
             <div class="form-actions">
             <q-btn to="/home" label="HOME" class="q-mr-md" />
           </div>
-<<<<<<< Updated upstream
           <div class="form-actions">
             <q-btn label="ABOUT US" class="q-mr-md" />
-=======
             <div class="form-actions">
             <q-btn label="Elder's Home" class="q-mr-md" />
           </div>
           <div class="form-actions">
             <q-btn label="Children's Home" class="q-mr-md" />
->>>>>>> Stashed changes
           </div>
           <div class="form-actions">
             <q-btn label="NOTIFICATIONS" class="q-mr-md"/>
@@ -35,7 +32,7 @@
 
           </div>
          
-
+</div>
         </q-btn-group>
       </div>
       <hr class="horizontal-line">
