@@ -3,7 +3,7 @@
     <div class="left-panel">
       <div class="left-top-panel">
 
-        <q-btn label="SIGN IN" to="/signin" class="q-mr-md-e" />
+       <!-- <q-btn label="SIGN IN" to="/signin" class="q-mr-md-e" />-->
 
       </div>
 
@@ -30,6 +30,8 @@
         </div>
         <div class="form-actions">
           <q-btn class="q-mr-md-d"  type="submit" label="CREATE ACCOUNT" @click="goToFullDashboard" />
+          <!--<h7><b>OR</b></h7>-->
+          <q-btn class="q-mr-md-d"  type="submit" label="Sign In" to="/signin" />
 
         </div>
       </div>
