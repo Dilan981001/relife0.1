@@ -1,4 +1,5 @@
 <template>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
   <div class="background">
     <div class="box1"></div>
     <div class="top-panel">
@@ -57,69 +58,55 @@
             <div class="row3">
               <div class="col3">
                 <br /><br />
-                <q-btn class="rec1" role="button">Join and help them</q-btn>
-              </div>
-              <div class="col align-self-center">
-                <a
-                  class="btn btn-outline-light btn-floating m-1 float-right"
-                  href="#!"
-                  role="button"
-                >
+                <q-btn class="rec3" role="button">Join and help them</q-btn>
+                
+              
+             
                   <i class="bi bi-arrow-right-circle"></i>
-                </a>
+                
               </div>
             </div>
           </div>
           <div class="col">
             <img
-              src="i1.jpeg"
-              class="img1"
-              alt="img1"
-              width="400"
-              height="300"
-            />
+              src="i1.jpeg" class="img1" alt="img1" width="400" height="300" />
           </div>
         </div>
         <br />
         <br />
-        <div class="rec2">
-          <div class="container text-center">
-            <div class="row">
-              <div class="col">
-                <a class="rec" href="#!" role="button">
-                  <i class="bi bi-geo-alt"></i>
+        
+        
+        <div class="rec6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <div class="col4">
+              <a class="rec" href="#!" role="button">
+                <i class="bi bi-geo-alt"></i>
+              </a>
+              <p3>Pay Us a Visit</p3>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="col4">
+              <div type="label">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                  <i class="bi bi-telephone"></i>
                 </a>
-                <p3>Pay Us a Visit</p3>
+                <p3>Give Us a Call</p3><br>
+                <p4>+94702516984</p4>
               </div>
-              <div class="col">
-                <div type="label">
-                  <a
-                    class="btn btn-outline-light btn-floating m-1"
-                    href="#!"
-                    role="button"
-                  >
-                    <i class="bi bi-telephone"></i>
-                  </a>
-                  <p3>Give Us a Call</p3><br />
-                  <p4>+94702516984</p4>
-                </div>
-              </div>
-              <div class="col">
-                <div type="label">
-                  <a
-                    class="btn btn-outline-light btn-floating m-1"
-                    href="#!"
-                    role="button"
-                  >
-                    <i class="bi bi-envelope"></i>
-                  </a>
-                  <p3>Send Us a Message</p3><br />
-                  <p4>reelife001@gmail.com</p4>
-                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="col4">
+              <div type="label">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                  <i class="bi bi-envelope"></i>
+                </a>
+                <p3>Send Us a Message</p3><br>
+                <p4>reelife001@gmail.com</p4>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   
@@ -139,8 +126,7 @@
 
     <div class="col">
       <h6>
-        this system is to help abandoned people such as children who do labor
-        work without completing their studies at an early age, elders who are
+        this system is to help abandoned people such as children who do labor work without completing their studies at an early age, elders who are
         forsaken by their own children, disabled people, and also beggars who
         don’t have a place to live, no work, no food to eat are all suffering
         for these people. Here, users can ask for refuge. On the other hand,
@@ -542,16 +528,22 @@
 .col2 {
   margin-top: 20px;
 }
+.bi{
+color: #ffffff;
+align-items: center;
+margin-right: 20px;
+font-size: 20px;
 
+}
 .horizontal-line {
   border: none;
   margin: 50px 0; /* Adjust the margin as needed */
   background: #284b36;
 }
 .box2 {
-  margin-bottom: 70px; /* Adds margin space at the bottom of the box */
+  margin-bottom: 30px; /* Adds margin space at the bottom of the box */
   padding: 20px; /* Adds padding space inside the box */
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .box1 {
   /* Adds margin space at the bottom of the box */
@@ -565,12 +557,22 @@
   padding-left: 100px;
   padding-right: 50px;
 }
+.col4{
+  
+  padding-left: 100px;
+  padding-right: 100px;
+}
 .q-mr-md-d-d {
   font-weight: bold;
   background: #284b36;
   color: #ffffff;
 }
-
+.vertical-line {
+  width: 1px;
+  height: 50px; /* Adjust the height as needed */
+  background-color: rgb(255, 255, 255); /* Adjust the color as needed */
+  margin: 0 0px; /* Adjust the margin as needed */
+}
 .rec1 {
   border-radius: 25px;
   background: #284b36;
@@ -611,15 +613,17 @@
   color: #ffffff;
   background: #284b36;
 }
-.rec2 {
-  border-radius: 25px;
-  background: rgba(0, 0, 0, 0.338);
+.rec6 {
+  border-radius: 70px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.255), rgba(21, 43, 21, 0.479));
   padding: 20px;
   height: 100px;
   font-family: "Montserrat";
   font-size: 25px;
-  color: black;
-  align-content: center;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+
 }
 .h1 {
   border-left-width: 20px;
@@ -645,19 +649,20 @@ h2 {
 
 .rec3 {
   border-radius: 25px;
-  padding: 20px;
-  width: 300px;
-  height: 60px;
+  background:linear-gradient(to right, #284b36, rgba(255, 255, 255, 0.238));
+  padding: 10px;
+  width: 250px;
+  height: 50px;
   font-family: "Montserrat";
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
-  color: white;
+  color: rgb(255, 255, 255);
   align-content: center;
-  background-image: linear-gradient(to right, green, white);
+
 }
 .card-img-top {
   border-radius: 50%;
-  border: 8px solid green;
+  border: 8px solid #284b36;
   width: 200px;
   height: 200px;
   @media (max-width: 768px) {
@@ -703,7 +708,7 @@ h2 {
   }
 }
 .form-control {
-  background: green;
+  background: #284b36;
   color: white;
   border-radius: 30px 30px 30px 30px;
   border-color: white;
