@@ -20,7 +20,7 @@
           </div>
 
           <div class="form-actions">
-            <q-btn label="NOTIFICATIONS" class="q-mr-md" />
+            <q-btn to="/notificationpage" label="NOTIFICATIONS" class="q-mr-md" />
           </div>
           <div class="form-actions">
             <q-btn label="DONATE" class="q-mr-md" />
@@ -59,11 +59,11 @@
               <div class="col3">
                 <br /><br />
                 <q-btn class="rec3" role="button">Join and help them</q-btn>
-                
-              
-             
+
+
+
                   <i class="bi bi-arrow-right-circle"></i>
-                
+
               </div>
             </div>
           </div>
@@ -74,8 +74,8 @@
         </div>
         <br />
         <br />
-        
-        
+
+
         <div class="rec6 d-flex justify-content-center align-items-center">
           <div class="row">
             <div class="col4">
@@ -106,10 +106,10 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
-  
+
   <br />
   <br />
 
@@ -558,7 +558,7 @@ font-size: 20px;
   padding-right: 50px;
 }
 .col4{
-  
+
   padding-left: 100px;
   padding-right: 100px;
 }

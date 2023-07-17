@@ -12,6 +12,7 @@ import SignUp from "@/views/SignUp.vue";
 import FullDashBoard from "@/views/FullDashBoard.vue";
 import MarketPlace from "@/views/MarketPlace.vue";
 import HomePage from "@/views/HomePage.vue";
+import NotificationPage from "@/views/Notification-Page.vue";
 
 export default {
   name: 'App',
@@ -27,6 +28,8 @@ export default {
     MarketPlace,
     // eslint-disable-next-line vue/no-unused-components
    HomePage,
+    // eslint-disable-next-line vue/no-unused-components
+    NotificationPage,
   }
 }
 </script>

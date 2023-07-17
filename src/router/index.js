@@ -5,6 +5,7 @@ import SignUp from "@/views/SignUp.vue";
 import FullDashBoard from "@/views/FullDashBoard.vue";
 import MarketPlace from "@/views/MarketPlace.vue";
 import HomePage from "@/views/HomePage.vue"
+import NotificationPage from "@/views/Notification-Page.vue";
 
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
     path:'/home',
     name:'HomePage',
     component:HomePage
+  },
+  {
+    path: '/notificationpage',
+    name: 'NotificationPage',
+    component: NotificationPage
   }
 
 
