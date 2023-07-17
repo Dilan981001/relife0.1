@@ -62,7 +62,7 @@
 
 
 
-                  <i class="bi bi-arrow-right-circle"></i>
+                  <i class="bi bi-arrow-right-circle" style="font-size: 34px"></i>
 
               </div>
             </div>
@@ -114,7 +114,7 @@
   <br />
 
 
-  <hr class="horizontal-line" />
+  <div class="box1"></div>
 
   <div class="row">
     <div class="col">
@@ -524,9 +524,18 @@
 <style scoped>
 .background {
   background-color: #284b36;
+  position: relative; /* Ensure relative positioning */
+  background-image: url('/public/Vector 40.png')/*,url('/public/Vector 2.png'),url('/public/Vector 3.png')*/; /* Set the path to your background image */
+  background-position: 25px 100px/*,850px -9px,750px 410px*/; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 .col2 {
   margin-top: 20px;
+}
+.bi-arrow-right-circle{
+  margin-left: 20px;
+  position: absolute;
+  
 }
 .bi{
 color: #ffffff;
@@ -561,6 +570,7 @@ font-size: 20px;
 
   padding-left: 100px;
   padding-right: 100px;
+  text-align: center;
 }
 .q-mr-md-d-d {
   font-weight: bold;
