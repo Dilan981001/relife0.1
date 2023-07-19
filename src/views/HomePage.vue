@@ -116,207 +116,19 @@
 
   <div class="box1"></div>
 
-  <div class="row">
-    <div class="col">
-      <h1>INTRODUCTION</h1>
-      <h2>Re Life 1.0</h2>
-
-      <img src="i2.jpeg" class="img2" alt="img1" width="400" height="400" />
-    </div>
-
-    <div class="col">
-      <h6>
-        this system is to help abandoned people such as children who do labor work without completing their studies at an early age, elders who are
-        forsaken by their own children, disabled people, and also beggars who
-        don’t have a place to live, no work, no food to eat are all suffering
-        for these people. Here, users can ask for refuge. On the other hand,
-        they can provide refuge.
-      </h6>
-
-      <div class="row">
-        <div class="col">
-          <h1>ABOUT</h1>
-          <h2>Re Life 1.0</h2>
-        </div>
-      </div>
-      <br />
-      <div class="row">
-        <h6>
-          This system helps monitor the individuals who have been abandoned and
-          help determine their needs and provide necessary assistance. It also
-          helps in providing timely assistance to these individuals, as well as
-          providing them with the necessary support and information. The
-          Abandoned People Management System is designed to provide the
-          necessary support and guidance to the abandoned people. It helps to
-          identify the individuals who require assistance and provide necessary
-          help to them. The system also helps in providing timely assistance to
-          the abandoned people, as well as providing them with the necessary
-          support and information. The Abandoned People Management System is
-          designed to provide the necessary support and guidance to the
-          abandoned people. It helps to identify the individuals who require
-          assistance and provide necessary help to them. The system also helps
-          in providing timely assistance to the abandoned people, as well as
-          providing them with the necessary support and information. It also
-          helps in tracking the progress of the abandoned people and monitoring
-          their progress.
-        </h6>
-      </div>
-      <div class="row">
-        <div class="row">
-          <div class="col"></div>
-          <div class="col">
-            <br />
-            <button type="button" class="rec3">LET’S GET IN TOUCH</button>
-          </div>
-          <div class="col"></div>
-        </div>
-      </div>
-    </div>
+  <div>
+    <about-us/>
   </div>
 
-  <hr class="horizontal-line" />
+ 
+  <div class="box1"></div>
 
-  <div class="p-3 mb-2 bg-success text-white">
-    <div class="container text-center">
-      <br /><br />
-      <div class="row">
-        <div class="col">
-          <div class="col">
-            <h1>Children’s Homes</h1>
-            <h2>More</h2>
-          </div>
-          <div class="col">
-            <a
-              class="btn btn-outline-light btn-floating m-1"
-              href="#!"
-              role="button"
-            >
-              <i class="bi bi-arrow-right-circle"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="col">
-          <h6>
-            Children's homes provide a safe and nurturing environment for
-            children who are unable to live with their natural parents or
-            guardians. These homes provide basic necessities such as food,
-            clothing, shelter, education and medical care. They also offer
-            emotional and social support for the children. The children living
-            in these homes have access to recreational activities such as
-            sports, outdoor activities, arts and crafts, and educational
-            opportunities.
-          </h6>
-        </div>
-      </div>
-
-      <br /><br />
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col">
-          <div class="card">
-            <div class="shadow shadow-offset-left-xs">
-              <center>
-                <img src="h4.jpg" class="card-img-top" alt="Skyscrapers" />
-              </center>
-              <div class="card-body">
-                <h5 class="card-title">Thudawa girls ...</h5>
-                <h7>Wadduwa</h7>
-                <p class="card-text">
-                  “Tudawe” Home is incharge of a committee of All Ceylon
-                  Buddhist Congress. We support them by providing the needs of
-                  the childrend
-                </p>
-              </div>
-              <div class="card-footer">
-                <button type="button" href="#" class="rec4">
-                  More Details..
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 bg-success border-light">
-            <div class="shadow shadow-offset-left-xs">
-              <center>
-                <img
-                  src="h2.png"
-                  class="card-img-top"
-                  alt="Los Angeles Skyscrapers"
-                />
-              </center>
-              <div class="card-body">
-                <h5 class="card-title">Niclula ..</h5>
-                <h7>Trincomalee</h7>
-                <p class="card-text">
-                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
-                  porttitor rhoncus libero justo laoreet sit amet vitae.
-                </p>
-              </div>
-              <div class="card-footer">
-                <button type="button" href="#" class="rec4">
-                  More Details..
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 bg-success border-light">
-            <div class="shadow shadow-offset-left-xs">
-              <center>
-                <img
-                  src="h1.jpeg"
-                  class="card-img-top"
-                  alt="Palm Springs Road"
-                />
-              </center>
-              <div class="card-body">
-                <h5 class="card-title">Jinananda v..</h5>
-                <h7>Anuradhapura</h7>
-                <p class="card-text">
-                  Begun in 1986 The Jinananda Childrens Development Centre, is
-                  an initiative of Rev . Urumuththe Sugathananda Thero and ....
-                </p>
-              </div>
-              <div class="card-footer">
-                <button type="button" href="#" class="rec4">
-                  More Details..
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 bg-success border-light">
-            <div class="shadow shadow-offset-left-xs">
-              <center>
-                <img
-                  src="h3.jpeg"
-                  class="card-img-top"
-                  alt="Palm Springs Road"
-                />
-              </center>
-              <div class="card-body">
-                <h5 class="card-title">Tikiri Sewana..</h5>
-                <h7>Kandy</h7>
-                <p class="card-text">
-                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
-                  porttitor rhoncus libero justo laoreet sit amet vitae.
-                </p>
-              </div>
-              <div class="card-footer">
-                <button type="button" href="#" class="rec4">
-                  More Details..
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div>
+    <children-home-cards/>
   </div>
-  <hr class="horizontal-line" />
+
+
+  <div class="box1"></div>
 
   <div class="p-3 mb-2 bg-success text-white">
     <div class="container text-center">
@@ -521,12 +333,26 @@
   </div>
 </template>
 
+<script>
+import AboutUs from '@/components/Home/AboutUs'
+import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards'
+
+export default {
+  components: {
+    AboutUs,
+    ChildrenHomeCards,
+  },
+  // other component options
+}
+</script>
+
+
 <style scoped>
 .background {
   background-color: #284b36;
   position: relative; /* Ensure relative positioning */
-  background-image: url('/public/Vector 40.png')/*,url('/public/Vector 2.png'),url('/public/Vector 3.png')*/; /* Set the path to your background image */
-  background-position: 25px 100px/*,850px -9px,750px 410px*/; /* Center the background image */
+  background-image: url('/public/Vector 40.png'),url('/public/Vector 7.png'),url('/public/Vector 8.png'),url('/public/Vector 14.png'),url('/public/Vector 19.png'),url('/public/Vector 18.png'); /* Set the path to your background image */
+  background-position: 25px 100px,10px 1268px,12px 1554px,14px 2287px,12px 3604px,10px 3883px; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 .col2 {

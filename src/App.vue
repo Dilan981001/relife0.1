@@ -13,6 +13,8 @@ import FullDashBoard from "@/views/FullDashBoard.vue";
 import MarketPlace from "@/views/MarketPlace.vue";
 import HomePage from "@/views/HomePage.vue";
 import NotificationPage from "@/views/Notification-Page.vue";
+import AboutUs from '@/components/Home/AboutUs';
+import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards'
 
 export default {
   name: 'App',
@@ -30,6 +32,10 @@ export default {
    HomePage,
     // eslint-disable-next-line vue/no-unused-components
     NotificationPage,
+     // eslint-disable-next-line vue/no-unused-components
+    AboutUs,
+     // eslint-disable-next-line vue/no-unused-components
+     ChildrenHomeCards,
   }
 }
 </script>
