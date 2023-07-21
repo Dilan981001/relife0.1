@@ -188,13 +188,14 @@ import Navbar from "@/components/NavBar.vue"
 <script>
 import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards'
 import NavBar from "@/components/NavBar.vue"
-
-
+import PageFooter from "@/components/PageFooter.vue"
+import HomeAbout from '@/components/Home/HomeAbout.vue'
 export default {
   components: {
     ChildrenHomeCards,
     NavBar,
-    
+    PageFooter,
+    HomeAbout,
     
   },
   // other component options
