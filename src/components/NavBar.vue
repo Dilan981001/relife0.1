@@ -13,14 +13,14 @@
               <q-btn to="/EldersHome" label="Elder's home" class="q-mr-md" />
             </div>
             <div class="form-actions">
-              <q-btn to="/home" label="children's home" class="q-mr-md" />
+              <q-btn to="/ChildrensHome" label="children's home" class="q-mr-md" />
             </div>
   
             <div class="form-actions">
               <q-btn to="/notificationpage" label="NOTIFICATIONS" class="q-mr-md" />
             </div>
             <div class="form-actions">
-              <q-btn label="DONATE" class="q-mr-md" />
+              <q-btn to="/EldersCard" label="DONATE" class="q-mr-md" />
             </div>
             <div class="form-actions">
               <q-btn to="/marketplace" label="MarketPlace" class="q-mr-md" />

@@ -15,54 +15,10 @@
             
 
 
-            <div class="card">
-                <div class="leftside col-2"><img src="h4.jpg" class="card-img-top" alt="Skyscrapers" /></div>
-           <div class="middle1 col2">dgh</div>
-           <div class="middle2 col-2">dfgh</div>
-           <div class="rightside col-2">fvdb</div>
-                
-                    
-                  
-                  <div class="card-body">
-            
-                    <h5 class="card-title">Thudawa girls ...</h5>
-                    <h7>Wadduwa</h7>
-                    <p class="card-text">
-                      “Tudawe” Home is incharge of a committee of All Ceylon
-                      Buddhist Congress. We support them by providing the needs of
-                      the childrend
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <button type="button" href="#" class="rec4">
-                      More Details..
-                    </button>
-                  </div>
-                
-              </div>
-              <div class="card">
-                <div class="shadow shadow-offset-left-xs">
-                  <center>
-                    <img src="h4.jpg" class="card-img-top" alt="Skyscrapers" />
-                  </center>
-                  <div class="card-body">
-                    <h5 class="card-title">Thudawa girls ...</h5>
-                    <h7>Wadduwa</h7>
-                    <p class="card-text">
-                      “Tudawe” Home is incharge of a committee of All Ceylon
-                      Buddhist Congress. We support them by providing the needs of
-                      the childrend
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <button type="button" href="#" class="rec4">
-                      More Details..
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div><elders-card/></div>
+              
         </div>
-        <div class="right col-4">
+        <div class="rights col-4">
             <h1>Elders Home</h1>
             <h6>Children's homes provide a safe and nurturing environment for children who are unable 
 to live with their natural parents or guardians. These homes provide basic necessities 
@@ -74,18 +30,21 @@ opportunities.</h6>
         </div>
         
     </div>
-   
+   <Footer/>
 
-</template>>
+</template>
 
 <script>
 
 import NavBar from "@/components/NavBar.vue"
-
+import EldersCard from "@/components/Home/EldersCard.vue"
+import Footer from "@/components/PageFooter.vue"
 
 export default {
   components: {
     NavBar,
+    EldersCard,
+    Footer,
     
     
   },
@@ -109,42 +68,16 @@ export default {
 
 .left{
     background-color: white;
-    height: 100%;
+    height: 90%;
     margin-top: 70px;
 }
-.right{
+.rights{
     background-color: #284b36;
     color: white;
-    height: 100%;
+   height: 90%;
     font-family: "Montserrat";
     text-align: justify;
     padding-left: 10px;
     padding-right: 10px;
 }
-
-.card-img-top {
-    border-radius: 50%;
-    border: 8px solid #284b36;
-    width: 150px;
-    height: 150px;
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  }
-  .card {
-    height: 250px;
-    width: 100%;
-    background: #1d402b;
-    border-radius: 30px 30px 30px 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: grid;
-    margin-bottom: 50px;
-    display: flex;
-    color: white;
-    @media (max-width: 768px) {
-      width: 100%;
-    
-    }
-  }
 </style>
