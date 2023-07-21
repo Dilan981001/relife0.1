@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import { Quasar } from 'quasar'
 import quasarUserOptions from './quasar-user-options'
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 const app = createApp(App).use(Quasar, quasarUserOptions)
 
