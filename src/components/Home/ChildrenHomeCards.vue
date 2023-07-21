@@ -141,7 +141,8 @@
       </div>
   </template>
   
-  <style scoped>.background {
+  <style scoped>
+  .background {
     background-color: #284b36;
     position: relative; /* Ensure relative positioning */
     background-image: url('/public/Vector 40.png'),url('/public/Vector 7.png'),url('/public/Vector 8.png'),url('/public/Vector 14.png'),url('/public/Vector 19.png'),url('/public/Vector 18.png'); /* Set the path to your background image */
