@@ -1,4 +1,10 @@
 <template>
+  <div class="background">
+  <div>
+    <NavBar/>
+  </div>
+  <div class="box1"></div>
+  <div class="box1"></div>
     <div class="row">
       <div class="col">
         <h1>INTRODUCTION</h1>
@@ -35,10 +41,29 @@
           </div>
         </div>
       </div>
+     
     </div>
+    <div>
+      <PageFooter/>
+    </div>
+  </div>
   </template>
+
+  <script>
+import PageFooter from '../PageFooter.vue';
+import NavBar from '../NavBar.vue';
+
+export default {
+  components: {
+    PageFooter,
+    NavBar,
+},
+  // other component options
+}
+</script>
   
-  <style scoped>.background {
+  <style scoped>
+  .background {
     background-color: #284b36;
     position: relative; /* Ensure relative positioning */
     background-image: url('/public/Vector 40.png'),url('/public/Vector 7.png'),url('/public/Vector 8.png'),url('/public/Vector 14.png'),url('/public/Vector 19.png'),url('/public/Vector 18.png'); /* Set the path to your background image */
