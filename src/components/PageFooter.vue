@@ -1,204 +1,133 @@
 <template>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-  <div class="background">
-    <div class="box1"></div>
-   
     <div>
-      <nav-bar/>
-    </div>
-
-    <div class="box2"></div>
-
-    <div class="p-3 mb-2 bg-success text-white">
-      <div class="container text-left">
+    <!-- Footer -->
+  <footer class="footer">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
         <div class="row">
-          <div class="col">
-            <div class="r1 text-left ml-4">
-              <p1 class="h1">Provide Refuge to</p1>
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <img src="relife.jpeg" class="img4" />
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">ABOUT</a>
+              </li>
               <br />
-              <p1 class="h1">The Abandoned People</p1>
-            </div>
-            <div class="row2">
-              <div class="col2">
-                <p2 class="text-left ml-4 mt-4 mb-0"
-                  >Help abandoned people to build their lives with your help by
-                  providing refuge and a fresh start. Support them to succeed in
-                  their future and let's create a better society by showing our
-                  heartfelt love.</p2>
-              </div>
-            </div>
-            <div class="row3">
-              <div class="col3">
-                <br /><br />
-                <q-btn class="rec3" role="button">Join and help them</q-btn>
-
-
-
-                  <i class="bi bi-arrow-right-circle" style="font-size: 34px"></i>
-
-              </div>
-            </div>
+              <li>
+                <a href="#!" class="text-white">SERVICES</a>
+              </li>
+              <br />
+              <li>
+                <a href="#!" class="text-white">TECHNOLOGIES</a>
+              </li>
+              <br />
+              <li>
+                <a href="#!" class="text-white">HOW TO JOIN</a>
+              </li>
+              <br />
+              <li>
+                <a href="#!" class="text-white">JOIN RELIFE</a>
+              </li>
+            </ul>
           </div>
-          <div class="col">
-            <img
-              src="i1.jpeg" class="img1" alt="img1" width="400" height="300" />
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">F.A.Q</a>
+              </li>
+              <br />
+              <li>
+                <a href="#!" class="text-white">PLACEMAP</a>
+              </li>
+              <br />
+              <li>
+                <a href="#!" class="text-white">CONDITIONS</a>
+              </li>
+              <br />
+              <li>
+                <a href="#!" class="text-white">LICENSES</a>
+              </li>
+            </ul>
           </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-white">SOCIALIZE WITH RELIFE</h5>
+            <br />
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="bi bi-facebook"></i
+              ></a>
+
+              <!-- Twitter -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="bi bi-twitter"></i
+              ></a>
+
+              <!-- Google -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="bi bi-google"></i
+              ></a>
+
+              <!-- Instagram -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <!-- Github -->
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="bi bi-github"></i
+              ></a>
+            </section>
+            <br />
+            <button type="button" href="#" class="rec3">JOIN WITH US</button>
+            <!-- Section: Social media -->
+          </div>
+          <!--Grid column-->
         </div>
-        <br />
-        <br />
-
-
-        <div class="rec6 d-flex justify-content-center align-items-center">
-          <div class="row">
-            <div class="col4">
-              <a class="rec" href="#!" role="button">
-                <i class="bi bi-geo-alt"></i>
-              </a>
-              <p3>Pay Us a Visit</p3>
-            </div>
-            <div class="vertical-line"></div>
-            <div class="col4">
-              <div type="label">
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                  <i class="bi bi-telephone"></i>
-                </a>
-                <p3>Give Us a Call</p3><br>
-                <p4>+94702516984</p4>
-              </div>
-            </div>
-            <div class="vertical-line"></div>
-            <div class="col4">
-              <div type="label">
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                  <i class="bi bi-envelope"></i>
-                </a>
-                <p3>Send Us a Message</p3><br>
-                <p4>reelife001@gmail.com</p4>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
     </div>
+    <!-- Grid container -->
 
-  <br />
-  <br />
-
-
-  <div class="box1"></div>
-
-  <div>
-    <home-about/>
-  </div>
-
- 
-  <div class="box1"></div>
-
-  <div>
-    <children-home-cards/>
-  </div>
-
-
-  <div class="box1"></div>
-
-  <div class="p-3 mb-2 bg-success text-white">
-    <div class="container text-center">
-      <!-- 2 column grid layout with text inputs for the first and last names -->
-      <div class="form1">
-        <br />
-        <form>
-          <p1 class="text-uppercase">JOIN WITH US</p1><br />
-          <p1 class="text-uppercase">Let’s Build Better Life For Them</p1
-          ><br /><br />
-          <div class="row mb-4">
-            <div class="col">
-              <div class="form-outline">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputFirstName"
-                  placeholder="First Name"
-                />
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-outline">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputLastName"
-                  placeholder="Last Name"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col">
-              <div class="form-outline">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  placeholder="Email"
-                />
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-outline">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputPhoneNumber"
-                  placeholder="Phone Number"
-                />
-              </div>
-            </div>
-          </div>
-
-          <!-- Message input -->
-          <div class="form-outline mb-4">
-            <textarea
-              class="form-control"
-              id="form6Example7"
-              rows="4"
-              placeholder="Additional Information"
-            ></textarea>
-          </div>
-          <!-- Submit button -->
-          <a class="form-control" href="#!" role="button">Join and help them</a
-          ><br /><br />
-        </form>
-      </div>
+    <!-- Copyright -->
+    <div class="text-white" align="center">
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Relife.com</a>
     </div>
-  </div>
-
-  <hr class="horizontal-line" />
-<div>
-  <page-footer/>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </div>
-  
-  </div>
 </template>
-
-<script>
-import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards'
-import PageFooter from '@/components/PageFooter.vue';
-import HomeAbout from '@/components/Home/HomeAbout.vue';
-import NavBar from '@/components/NavBar'
-
-export default {
-  components: {
-    ChildrenHomeCards,
-    PageFooter,
-    HomeAbout,
-    NavBar,
-  },
-  // other component options
-}
-</script>
-
 
 <style scoped>
 .background {

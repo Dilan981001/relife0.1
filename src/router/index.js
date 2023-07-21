@@ -6,6 +6,9 @@ import FullDashBoard from "@/views/FullDashBoard.vue";
 import MarketPlace from "@/views/MarketPlace.vue";
 import HomePage from "@/views/HomePage.vue"
 import NotificationPage from "@/views/Notification-Page.vue";
+import AboutUs from '@/components/Home/AboutUs.vue';
+import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards.vue';
+import PageFooter from '@/components/PageFooter.vue';
 
 const routes = [
   {
@@ -41,6 +44,21 @@ const routes = [
     path: '/notificationpage',
     name: 'NotificationPage',
     component: NotificationPage
+  },
+  {
+    path: '/AboutUs',
+    name: 'AboutUs',
+    component: AboutUs
+  },
+  {
+    path: '/PageFooter',
+    name: 'PageFooter',
+    component: PageFooter
+  },
+  {
+    path: '/ChildrenHomeCards',
+    name: 'ChildrenHomeCards',
+    component: ChildrenHomeCards
   }
 
 
