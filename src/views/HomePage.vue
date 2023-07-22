@@ -20,11 +20,12 @@
             </div>
             <div class="row2">
               <div class="col2">
-                <p2 class="text-left ml-4 mt-4 mb-0"
-                  >Help abandoned people to build their lives with your help by
+                <p2 class="text-left ml-4 mt-4 mb-0">
+                  Help abandoned people to build their lives with your help by
                   providing refuge and a fresh start. Support them to succeed in
                   their future and let's create a better society by showing our
-                  heartfelt love.</p2>
+                  heartfelt love.
+                </p2>
               </div>
             </div>
             <div class="row3">
@@ -88,8 +89,57 @@
 
   <div class="box1"></div>
 
-  <div>
-    <home-about/>
+  <div class="row">
+    <!--left side of Introduction-->
+    <div class="col">
+      <div class="colrr">
+      <h1>INTRODUCTION</h1>
+      <div class="colr">
+        <div class="c1">
+      <h4>Re Life </h4>
+    </div>
+      <div class="c2" > <i class="bi bi-arrow-right" style="font-size: 34px" ></i>
+      </div>
+    </div>
+      <img src="i2.jpeg" class="img2" alt="img1" width="400" height="400" />
+    </div>
+    </div>
+<!-- right side of the introduction -->
+    <div class="col">
+      <div class="coll">
+      <h6>
+        This system is designed to help abandoned people such as children who engage in labor work without completing their studies at an early age, elders who are forsaken by their own children, disabled people, and also beggars who don't have a place to live, work, or food to eat. All these people are suffering. Here, users can ask for refuge. On the other hand, they can provide refuge.
+      </h6>
+      <div class="row">
+        <div class="coll2">
+          <h1>ABOUT</h1>
+          <div class="c3">
+          <h4>Re Life</h4>
+        </div>
+        </div>
+      </div>
+      <!--childeren home part-->
+      <br />
+      <div class="row">
+        <div class="c4">
+        <h6>
+          This system helps monitor individuals who have been abandoned and helps determine their needs to provide necessary assistance. It also provides timely assistance and the necessary support and information to these individuals. The Abandoned People Management System is designed to provide the necessary support and guidance to abandoned people. It helps identify individuals who require assistance and provide necessary help to them. The system also helps track the progress of abandoned people and monitor their development.
+        </h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+        
+          <div class="col">
+            <br />
+            <q-btn type="button" class="rec5">LET’S GET IN TOUCH</q-btn>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    </div>
+   
   </div>
 
  
@@ -185,14 +235,12 @@
 <script>
 import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards'
 import PageFooter from '@/components/PageFooter.vue';
-import HomeAbout from '@/components/Home/HomeAbout.vue';
 import NavBar from '@/components/NavBar'
 
 export default {
   components: {
     ChildrenHomeCards,
     PageFooter,
-    HomeAbout,
     NavBar,
   },
   // other component options
@@ -203,10 +251,52 @@ export default {
 <style scoped>
 .background {
   background-color: #284b36;
-  position: relative; /* Ensure relative positioning */
-  background-image: url('/public/Vector 40.png'),url('/public/Vector 7.png'),url('/public/Vector 8.png'),url('/public/Vector 14.png'),url('/public/Vector 19.png'),url('/public/Vector 18.png'); /* Set the path to your background image */
-  background-position: 25px 100px,10px 1268px,12px 1554px,14px 2287px,12px 3604px,10px 3883px; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  position: relative;
+  /* Ensure relative positioning */
+  background-image: url('/public/Vector 40.png'), url('/public/Vector 7.png'), url('/public/Vector 8.png'), url('/public/Vector 14.png'), url('/public/Vector 19.png'), url('/public/Vector 18.png');
+  /* Set the path to your background images */
+  background-position: 25px 100px, 10px 1268px, 12px 1554px, 14px 2287px, 12px 3604px, 10px 3883px;
+  /* Center the background images */
+  background-repeat: no-repeat;
+  /* Prevent the background images from repeating */
+}
+.rec5{
+  border-radius: 25px;
+  background:linear-gradient(to right, #284b36, rgba(255, 255, 255, 0.238));
+  padding: 10px;
+  width: 250px;
+  height: 50px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  align-content: center;
+  margin-left: -100px;
+  margin-top: -50px;
+}
+.c1{
+  margin-top: 10px;
+}
+.c3{
+  margin-top: -50px;
+}
+.c4{
+  margin-top: -70px;
+}
+.coll{
+  margin-left: -200px;
+  padding-right: 50px;
+}
+.coll2{
+  margin-top: -70px;
+}
+.c2{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.colr{
+  display: flex;
+  margin-top: -80px;
 }
 .col2 {
   margin-top: 20px;
@@ -333,6 +423,15 @@ h2 {
   color: white;
   font-size: 40px;
   font-weight: lighter;
+  text-align: justify;
+}
+h4{
+  color: white;
+
+  font-weight: lighter;
+  text-align: justify;
+}
+h6{
   text-align: justify;
 }
 
