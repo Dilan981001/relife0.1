@@ -4,22 +4,27 @@
           <br /><br />
           <div class="row">
             <div class="col">
-              <div class="col">
+              <div class="col6">
+              <div class="col1">
                 <h1>Children’s Homes</h1>
+                <div class="col7">
                 <h2>More</h2>
               </div>
-              <div class="col">
+              <div class="col8">
                 <a
                   class="btn btn-outline-light btn-floating m-1"
                   href="#!"
                   role="button"
                 >
-                  <i class="bi bi-arrow-right-circle"></i>
+                  <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
+            </div>
+            </div>
     
             <div class="col">
+            <div class="col5">
               <h6>
                 Children's homes provide a safe and nurturing environment for
                 children who are unable to live with their natural parents or
@@ -31,6 +36,8 @@
                 opportunities.
               </h6>
             </div>
+            </div>
+          
           </div>
     
           <br /><br />
@@ -39,11 +46,14 @@
               <div class="card">
                 <div class="shadow shadow-offset-left-xs">
                   <center>
+                    
                     <img src="h4.jpg" class="card-img-top" alt="Skyscrapers" />
                   </center>
+                  <div class="card-main-body">
                   <div class="card-body">
                     <h5 class="card-title">Thudawa girls ...</h5>
-                    <h7>Wadduwa</h7>
+                    
+                    <h6>Wadduwa</h6>
                     <p class="card-text">
                       “Tudawe” Home is incharge of a committee of All Ceylon
                       Buddhist Congress. We support them by providing the needs of
@@ -51,9 +61,10 @@
                     </p>
                   </div>
                   <div class="card-footer">
-                    <button type="button" href="#" class="rec4">
+                    <q-btn type="button" href="#" class="rec4">
                       More Details..
-                    </button>
+                    </q-btn>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -68,18 +79,20 @@
                       alt="Los Angeles Skyscrapers"
                     />
                   </center>
+                  <div class="card-main-body">
                   <div class="card-body">
                     <h5 class="card-title">Niclula ..</h5>
-                    <h7>Trincomalee</h7>
+                    <h6>Trincomalee</h6>
                     <p class="card-text">
                       Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
                       porttitor rhoncus libero justo laoreet sit amet vitae.
                     </p>
                   </div>
                   <div class="card-footer">
-                    <button type="button" href="#" class="rec4">
+                    <q-btn type="button" href="#" class="rec4">
                       More Details..
-                    </button>
+                    </q-btn>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -94,19 +107,21 @@
                       alt="Palm Springs Road"
                     />
                   </center>
+                  <div class="card-main-body">
                   <div class="card-body">
                     <h5 class="card-title">Jinananda v..</h5>
-                    <h7>Anuradhapura</h7>
+                    <h6>Anuradhapura</h6>
                     <p class="card-text">
                       Begun in 1986 The Jinananda Childrens Development Centre, is
                       an initiative of Rev . Urumuththe Sugathananda Thero and ....
                     </p>
                   </div>
                   <div class="card-footer">
-                    <button type="button" href="#" class="rec4">
+                    <q-btn type="button" href="#" class="rec4">
                       More Details..
-                    </button>
+                    </q-btn>
                   </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -120,19 +135,21 @@
                       alt="Palm Springs Road"
                     />
                   </center>
+                  <div class="card-main-body">
                   <div class="card-body">
                     <h5 class="card-title">Tikiri Sewana..</h5>
-                    <h7>Kandy</h7>
+                    <h6>Kandy</h6>
                     <p class="card-text">
                       Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
                       porttitor rhoncus libero justo laoreet sit amet vitae.
                     </p>
                   </div>
                   <div class="card-footer">
-                    <button type="button" href="#" class="rec4">
+                    <q-btn type="button" href="#" class="rec4">
                       More Details..
-                    </button>
+                    </q-btn>
                   </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -152,6 +169,7 @@
   .col2 {
     margin-top: 20px;
   }
+
   .bi-arrow-right-circle{
     margin-left: 20px;
     position: absolute;
@@ -163,6 +181,12 @@
   margin-right: 20px;
   font-size: 20px;
   
+  }
+  .col8{
+    margin-top: -70px;
+  }
+  .col7{
+    margin-top: -50px;
   }
   .horizontal-line {
     border: none;
@@ -185,6 +209,17 @@
   .col {
     padding-left: 100px;
     padding-right: 50px;
+  }
+  .row{
+    margin-right: 100px;
+  }
+
+  .col5 {
+    margin-left: -200px;
+    margin-top: 90px;
+    margin-right: -50px;
+    
+ 
   }
   .col4{
   
@@ -299,10 +334,13 @@
       width: 100%;
     }
   }
+  .card-main-body{
+    margin-top: -40px;
+  }
   .card {
     height: 600px;
     width: 250px;
-    background: #1d402b;
+    background: radial-gradient(ellipse at center, #ffffff3d,#346045, rgb(17, 35, 24));;
     border-radius: 30px 30px 30px 30px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -311,16 +349,26 @@
       width: 100%;
     }
   }
+  .card-text{
+    margin-top: -30px;
+  }
+  .shadow{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .rec4 {
     border-radius: 20px;
-    background-image: linear-gradient(to right, green, white);
+    background-image: linear-gradient(to right, #284b36, rgba(255, 255, 255, 0.238));
     padding: 20px;
-    width: 150px;
+    width: 200px;
     height: 10px;
     font-family: "Montserrat";
     font-size: 15px;
     color: white;
     align-content: center;
+    margin-top: 10px;
+    display: center;
+    justify-content: center;
   }
   .form1 {
     height: auto;
@@ -364,8 +412,9 @@
   h6 {
     font-family: "Montserrat";
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     color: white;
+    margin-top: -30px;
   }
   
   p1 {
