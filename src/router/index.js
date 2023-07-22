@@ -11,6 +11,8 @@ import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards.vue';
 import PageFooter from '@/components/PageFooter.vue';
 import EldersHome from "@/components/EldersHome.vue"
 import ChildrensHome from "@/components/ChildrensHome.vue"
+import DonateFund from "@/components/DonateFund.vue"
+import PaymentSecure from "@/components/PaymentSecure.vue"
 
 
 const routes = [
@@ -73,7 +75,16 @@ const routes = [
     name: 'ChildrenssHome',
     component: ChildrensHome
   },
-  
+  {
+    path: '/donatefund',
+    name: 'DonateFund',
+    component: DonateFund
+  },
+  {
+    path: '/paymentsecure',
+    name: 'PaymentSecure',
+    component: PaymentSecure
+  },
 
  
 

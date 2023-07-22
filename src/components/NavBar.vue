@@ -20,7 +20,7 @@
               <q-btn to="/notificationpage" label="NOTIFICATIONS" class="q-mr-md" />
             </div>
             <div class="form-actions">
-              <q-btn to="/EldersCard" label="DONATE" class="q-mr-md" />
+              <q-btn to="/donatefund" label="DONATE" class="q-mr-md" />
             </div>
             <div class="form-actions">
               <q-btn to="/marketplace" label="MarketPlace" class="q-mr-md" />

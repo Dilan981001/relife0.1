@@ -170,8 +170,7 @@ import Navbar from "@/components/NavBar.vue"
             ></textarea>
           </div>
           <!-- Submit button -->
-          <a class="form-control" href="#!" role="button">Join and help them</a
-          ><br /><br />
+          <a class="form-control" href="#!" role="button">Join and help them</a><br /><br />
         </form>
       </div>
     </div>
