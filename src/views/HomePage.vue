@@ -247,8 +247,6 @@ export default {
     NavBar,
     PageFooter,
 
-    
-
   },
   // other component options
 }
