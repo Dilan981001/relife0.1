@@ -9,6 +9,9 @@ import NotificationPage from "@/views/Notification-Page.vue";
 import AboutUs from '@/components/Home/AboutUs.vue';
 import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards.vue';
 import PageFooter from '@/components/PageFooter.vue';
+import EldersHome from "@/components/EldersHome.vue"
+import ChildrensHome from "@/components/ChildrensHome.vue"
+
 
 const routes = [
   {
@@ -59,7 +62,20 @@ const routes = [
     path: '/ChildrenHomeCards',
     name: 'ChildrenHomeCards',
     component: ChildrenHomeCards
-  }
+  },
+  {
+    path: '/EldersHome',
+    name: 'EldersHome',
+    component: EldersHome
+  },
+  {
+    path: '/ChildrensHome',
+    name: 'ChildrenssHome',
+    component: ChildrensHome
+  },
+  
+
+ 
 
 
   // other routes...

@@ -15,6 +15,8 @@ import HomePage from "@/views/HomePage.vue";
 import NotificationPage from "@/views/Notification-Page.vue";
 import AboutUs from '@/components/Home/AboutUs';
 import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards'
+import EldersHome from "@/components/EldersHome.vue"
+import EldersCard from "@/components/Home/EldersCard.vue"
 
 export default {
   name: 'App',
@@ -35,7 +37,13 @@ export default {
      // eslint-disable-next-line vue/no-unused-components
     AboutUs,
      // eslint-disable-next-line vue/no-unused-components
-     ChildrenHomeCards,
+    ChildrenHomeCards,
+     // eslint-disable-next-line vue/no-unused-components
+     EldersHome,
+     // eslint-disable-next-line vue/no-unused-components
+     EldersCard,
+     // eslint-disable-next-line vue/no-unused-components
+
   }
 }
 </script>

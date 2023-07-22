@@ -1,4 +1,7 @@
+import Navbar from "@/components/NavBar.vue"
+
 <template>
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
   <div class="background">
     <div class="box1"></div>
@@ -234,14 +237,19 @@
 
 <script>
 import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards'
-import PageFooter from '@/components/PageFooter.vue';
-import NavBar from '@/components/NavBar'
+import NavBar from "@/components/NavBar.vue"
+import PageFooter from "@/components/PageFooter.vue"
+import HomeAbout from '@/components/Home/HomeAbout.vue'
 
 export default {
   components: {
     ChildrenHomeCards,
+    NavBar,
     PageFooter,
     NavBar,
+    HomeAbout,
+    
+
   },
   // other component options
 }
