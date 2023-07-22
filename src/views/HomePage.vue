@@ -216,8 +216,8 @@ import Navbar from "@/components/NavBar.vue"
               class="form-control"
               id="form6Example7"
               rows="4"
-              placeholder="Additional Information"
-            ></textarea>
+              placeholder="Additional Information">
+            </textarea>
           </div>
           <!-- Submit button -->
           <a class="form-control" href="#!" role="button">Join and help them</a><br /><br />
@@ -264,6 +264,7 @@ export default {
   background-repeat: no-repeat;
   /* Prevent the background images from repeating */
 }
+
 .rec5{
   border-radius: 25px;
   background:linear-gradient(to right, #284b36, rgba(255, 255, 255, 0.238));
