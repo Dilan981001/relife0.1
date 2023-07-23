@@ -363,7 +363,7 @@ font-size: 20px;
 }
 .col4{
 
-  padding-left: 100px;
+  padding-left: 90px;
   padding-right: 100px;
   text-align: center;
 }
