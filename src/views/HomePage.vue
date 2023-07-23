@@ -223,9 +223,6 @@ import Navbar from "@/components/NavBar.vue"
 
           <q-btn class="rec8" href="#!">Join and help them</q-btn>
           <br /><br />
-=======
-          <a class="form-control" href="#!" role="button">Join and help them</a><br /><br />
-
         </form>
       </div>
     </div>
