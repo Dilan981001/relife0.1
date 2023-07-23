@@ -17,6 +17,8 @@ import AboutUs from '@/components/Home/AboutUs';
 import ChildrenHomeCards from '@/components/Home/ChildrenHomeCards'
 import EldersHome from "@/components/EldersHome.vue"
 import EldersCard from "@/components/Home/EldersCard.vue"
+import DonateFund from "@/components/DonateFund.vue"
+import PaymentSecure from "@/components/PaymentSecure.vue"
 
 export default {
   name: 'App',
@@ -41,8 +43,13 @@ export default {
      // eslint-disable-next-line vue/no-unused-components
      EldersHome,
      // eslint-disable-next-line vue/no-unused-components
+     DonateFund,
+     // eslint-disable-next-line vue/no-unused-components
      EldersCard,
      // eslint-disable-next-line vue/no-unused-components
+     PaymentSecure,
+     // eslint-disable-next-line vue/no-unused-components
+
 
   }
 }

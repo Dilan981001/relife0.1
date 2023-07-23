@@ -2,9 +2,11 @@
     <div class="background">
       <div class="row">
         <div class="col">
+
+
           <h1>INTRODUCTION</h1>
-          <h2>Re Life 1.0</h2>
-    
+ 
+            <h2>Re Life 1.0</h2>
           <img src="i2.jpeg" class="img2" alt="img1" width="400" height="400" />
         </div>
     
@@ -327,5 +329,7 @@
       width: 200px;
       height: 200px;
     }
+
+   
     </style>
     

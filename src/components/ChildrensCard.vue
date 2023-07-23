@@ -1,6 +1,6 @@
 <template>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-<div class="background">
+
   
    <div class="card">     
                 <div class="card-body">      
@@ -154,7 +154,7 @@ libero justo laoreet sit amet vitae.
 
 
            
-       </div>  
+      
          
 </template>
 
