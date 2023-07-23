@@ -151,6 +151,7 @@
 .container{
   margin-bottom: 30px;
 }
+
 .col2 {
   margin-top: 20px;
 }
