@@ -213,23 +213,29 @@ import Navbar from "@/components/NavBar.vue"
           <!-- Message input -->
           <div class="form-outline mb-4">
             <textarea
-              class="form-control"
+              class="form-controll"
               id="form6Example7"
               rows="4"
-              placeholder="Additional Information">
-            </textarea>
+              placeholder="Additional Information"
+            ></textarea>
           </div>
           <!-- Submit button -->
+
+          <q-btn class="rec8" href="#!">Join and help them</q-btn>
+          <br /><br />
+=======
           <a class="form-control" href="#!" role="button">Join and help them</a><br /><br />
+
         </form>
       </div>
     </div>
   </div>
 
-  <hr class="horizontal-line" />
+  <div class="box2"></div>
 <div>
   <page-footer/>
 </div>
+<div class="box1"></div>
   
   </div>
 </template>
@@ -262,9 +268,9 @@ export default {
   background-position: 25px 100px, 10px 1268px, 12px 1554px, 14px 2287px, 12px 3604px, 10px 3883px;
   /* Center the background images */
   background-repeat: no-repeat;
+  
   /* Prevent the background images from repeating */
 }
-
 .rec5{
   border-radius: 25px;
   background:linear-gradient(to right, #284b36, rgba(255, 255, 255, 0.238));
@@ -278,6 +284,20 @@ export default {
   align-content: center;
   margin-left: -100px;
   margin-top: -50px;
+}
+.rec8{
+  border-radius: 25px;
+  background:linear-gradient(to right, #284b36, rgba(255, 255, 255, 0.238));
+  padding: 10px;
+  width: 250px;
+  height: 50px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  align-content: center;
+  margin-left: -20px;
+  margin-top: 50px;
 }
 .c1{
   margin-top: 10px;
@@ -302,6 +322,10 @@ export default {
 .colr{
   display: flex;
   margin-top: -80px;
+  position: relative; /* Ensure relative positioning */
+  background-image: url('/public/Vector 7.png'),url('/public/Vector 8.png'),url('/public/Vector 14.png'),url('/public/Vector 19.png'),url('/public/Vector 18.png'),url('/public/Vector 7.png'); /* Set the path to your background image */
+  background-position: 10px 1268px,12px 1554px,14px 2287px,12px 3604px,10px 3883px,25px 100px; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 .col2 {
   margin-top: 20px;
@@ -487,21 +511,22 @@ h6{
 }
 .form1 {
   height: auto;
-  width: 80%;
-  background: #1d402b;
+  margin-right: 100px;
+  background:radial-gradient(ellipse at center, #ffffff3d,#346045, rgb(17, 35, 24));
   border-color: white;
   border-radius: 30px 30px 30px 30px;
   padding: 30px;
   position: relative;
   top: 50%;
   left: 50%;
+  width: 85%;
   transform: translate(-50%, 5%);
   @media (max-width: 768px) {
     width: 100%;
   }
 }
 .form-control {
-  background: #284b36;
+  background: #284b3691;
   color: white;
   border-radius: 30px 30px 30px 30px;
   border-color: white;
@@ -509,6 +534,19 @@ h6{
   margin: 15px 15px 15px 15px;
   width: 100%;
   height: auto;
+  width: 500px;
+  margin-left: -50px;
+}
+.form-controll{
+  background: #284b3691;
+  color: white;
+  border-radius: 30px 30px 30px 30px;
+  border-color: white;
+  padding: 10px;
+  margin: 15px 15px 15px 15px;
+  width: 100%;
+  height: auto;
+  width: 1100px;
 }
 .footer {
   background: #284b36;

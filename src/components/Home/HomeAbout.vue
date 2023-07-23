@@ -51,10 +51,6 @@
     <style scoped>
     .background {
       background-color: #284b36;
-      position: relative; /* Ensure relative positioning */
-      background-image: url('/public/Vector 40.png'),url('/public/Vector 7.png'),url('/public/Vector 8.png'),url('/public/Vector 14.png'),url('/public/Vector 19.png'),url('/public/Vector 18.png'); /* Set the path to your background image */
-      background-position: 25px 100px,10px 1268px,12px 1554px,14px 2287px,12px 3604px,10px 3883px; /* Center the background image */
-      background-repeat: no-repeat; /* Prevent the background image from repeating */
     }
     .col2 {
       margin-top: 20px;

@@ -1,4 +1,5 @@
 <template>
+  <div class="back">
     <div class="f1">
     <!-- Footer -->
   <footer class="footer">
@@ -10,59 +11,61 @@
         <div class="row">
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <img src="relife.jpeg" class="img4" />
+            <img src="relife3.ico" class="q-mr-md" />
           </div>
           <!--Grid column-->
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <ul class="list-unstyled mb-0">
-              <li>
+              
                 <a href="#!" class="text-white">ABOUT</a>
-              </li>
+          
               <br />
-              <li>
+
+              <br />
                 <a href="#!" class="text-white">SERVICES</a>
-              </li>
+              
               <br />
-              <li>
+              <br />
                 <a href="#!" class="text-white">TECHNOLOGIES</a>
-              </li>
+              
               <br />
-              <li>
+              <br />
                 <a href="#!" class="text-white">HOW TO JOIN</a>
-              </li>
+              
               <br />
-              <li>
+              <br />
                 <a href="#!" class="text-white">JOIN RELIFE</a>
-              </li>
+              
             </ul>
+           
           </div>
           <!--Grid column-->
-
+          <div class="vertical-line"></div>
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <ul class="list-unstyled mb-0">
-              <li>
+              
                 <a href="#!" class="text-white">F.A.Q</a>
-              </li>
+              
               <br />
-              <li>
+              <br />
                 <a href="#!" class="text-white">PLACEMAP</a>
-              </li>
+              
               <br />
-              <li>
+              <br />
                 <a href="#!" class="text-white">CONDITIONS</a>
-              </li>
+              
               <br />
-              <li>
+              <br />
                 <a href="#!" class="text-white">LICENSES</a>
-              </li>
+              
             </ul>
           </div>
           <!--Grid column-->
-
+          <div class="vertical-line"></div>
           <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div class="col-lg-3 ">
             <h5 class="text-white">SOCIALIZE WITH RELIFE</h5>
             <br />
             <!-- Section: Social media -->
@@ -121,27 +124,34 @@
     <!-- Copyright -->
     <div class="text-white" align="center">
       © 2023 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Relife.com</a>
+      <a class="text-white" href="relife.com">Relife.com</a>
     </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
 </div>
+</div>
 </template>
 
 <style scoped>
-.background {
+.back{
   background-color: #284b36;
-  position: relative; /* Ensure relative positioning */
-  background-image: url('/public/Vector 40.png'),url('/public/Vector 7.png'),url('/public/Vector 8.png'),url('/public/Vector 14.png'),url('/public/Vector 19.png'),url('/public/Vector 18.png'); /* Set the path to your background image */
-  background-position: 25px 100px,10px 1268px,12px 1554px,14px 2287px,12px 3604px,10px 3883px; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.col-lg-3{
+  margin-left: 30px;
 }
 .f1{
   height: 10%;
   width: 100%;
   position: static;
+  margin-top: 50px;
 }
+.container{
+  margin-bottom: 30px;
+}
+
 .col2 {
   margin-top: 20px;
 }
@@ -191,10 +201,12 @@ font-size: 20px;
   color: #ffffff;
 }
 .vertical-line {
-  width: 1px;
-  height: 50px; /* Adjust the height as needed */
-  background-color: rgb(255, 255, 255); /* Adjust the color as needed */
-  margin: 0 0px; /* Adjust the margin as needed */
+  width: 3px;
+  height: 200px; /* Adjust the height as needed */
+  background-color: rgba(255, 255, 255, 0.596); /* Adjust the color as needed */
+ margin-left: -100px;
+ margin-right: 20px;
+ 
 }
 .rec1 {
   border-radius: 25px;
@@ -230,6 +242,8 @@ font-size: 20px;
 }
 .q-mr-md {
   margin-left: 5px;
+  width: 250px;
+  height: 150px;
 }
 .q-mr-md-d {
   font-weight: bold;

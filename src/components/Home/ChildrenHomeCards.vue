@@ -340,7 +340,7 @@
   .card {
     height: 600px;
     width: 250px;
-    background: radial-gradient(ellipse at center, #ffffff3d,#346045, rgb(17, 35, 24));;
+    background: radial-gradient(ellipse at center, #ffffff3d,#346045, rgb(17, 35, 24));
     border-radius: 30px 30px 30px 30px;
     padding-top: 30px;
     padding-bottom: 30px;
