@@ -600,8 +600,9 @@ p4 {
   font-family: "Montserrat";
   font-size: 15px;
   font-weight: normal;
-  text-align: left;
+  text-align: center;
   color: white;
+  margin-left: 30px;
 }
 
 .top-panel {
