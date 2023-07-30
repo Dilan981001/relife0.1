@@ -463,7 +463,7 @@ h6{
 
 .rec3 {
   border-radius: 25px;
-  background:linear-gradient(to right, #284b36, rgba(255, 255, 255, 0.238));
+  background: rgba(255, 255, 255, 0.238);
   padding: 10px;
   width: 250px;
   height: 50px;

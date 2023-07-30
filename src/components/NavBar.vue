@@ -250,8 +250,11 @@ h2 {
 }
 
 .right-panel {
-  margin-left: 270px;
+  margin-left: 300px;
   display: flex;
+}
+.left-panel{
+  margin-left: 70px;
 }
 
 h6 {
