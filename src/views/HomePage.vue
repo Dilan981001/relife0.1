@@ -2,11 +2,12 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
   <div class="background">
-    <div class="box1"></div>
-   
     <div>
       <nav-bar/>
     </div>
+    <div class="box1"></div>
+   
+  
 
     <div class="box2"></div>
 

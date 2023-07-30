@@ -1,4 +1,5 @@
 <template>
+  <div class="back2">
     <div class="top-panel">
         <q-btn-group flat>
           <div class="left-panel">
@@ -31,6 +32,7 @@
           </div>
         </q-btn-group>
       </div>
+    </div>
 </template>
 
 <style scoped>
@@ -250,11 +252,11 @@ h2 {
 }
 
 .right-panel {
-  margin-left: 300px;
+  margin-left:300px;
   display: flex;
 }
 .left-panel{
-  margin-left: 70px;
+  margin-left: -4px;
 }
 
 h6 {
@@ -308,10 +310,22 @@ p4 {
   justify-content: flex-start;
   padding: 20px;
   font-weight: bold;
-  height: 40px;
-  background-color: #284b36;
+  height: 80px;
   padding-bottom: 70px;
+  
 }
+.back2{
+  position: fixed;
+
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 5%;
+  height: 100px;
+  background-color: #284b36;
+}
+
 
 .text-white {
   font-family: "Montserrat";
