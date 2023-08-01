@@ -624,4 +624,148 @@ p4 {
   width: 200px;
   height: 200px;
 }
+@media (max-width: 768px) {
+  /* Hide the background images on small screens */
+  .background {
+    background-image: none;
+  }
+
+  /* Remove background boxes on small screens */
+  .box1,
+  .box2 {
+    display: none;
+  }
+
+  /* Reduce padding for smaller screens */
+  .col {
+    padding: 10px;
+    text-align: justify;
+
+  }
+
+  /* Reduce padding and center the content on smaller screens */
+  .col4 {
+    padding: 10px;
+    text-align: center;
+  }
+  .coll{
+    text-align: justify;
+   
+    margin-left: 40px;
+  }
+  .rec5{
+    margin-left: 5px;
+  }
+  .coll2{
+    text-align: center;
+  }
+  .colr{
+    text-align: justify;
+  }
+ 
+
+  /* Remove background images on small screens */
+  .colr {
+    background-image: none;
+  }
+
+  /* Show the arrow icon on small screens */
+  .c2 {
+    margin-left: 80px;
+    margin-top: -5px;
+    display: block;
+  }
+
+  /* Adjust the margins for better layout on small screens */
+  .c3,
+  .c4 {
+    margin-top: -30px;
+    text-align: center;
+  }
+
+  /* Make the images responsive on small screens */
+  .img1,
+  .img2 {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+  }
+
+  /* Center the buttons on small screens */
+  .rec3,
+  .rec8 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Set form width to 90% and center the form on small screens */
+  .form1 {
+    width: 80%;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+  }
+
+  /* Make the form inputs full width on small screens and reset the margin for the form inputs */
+  .form-control,
+  .form-controll {
+    width: 100%;
+    margin-left: 0;
+    
+  }
+
+  /* Stack the columns on small screens */
+  .row {
+    flex-direction: column;
+    
+  }
+
+  /* Adjust margins and center text for the header on small screens */
+  .r1 {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* Hide the vertical lines separating the contact options on small screens */
+  .vertical-line {
+    display: none;
+  }
+
+  /* Reduce font size for text on small screens */
+  .h1,
+  h1,
+  h2,
+  h4,
+  h6,
+  .text-white,
+  p1,
+  p2,
+  p3,
+  p4,
+  p5 {
+    font-size: 20px;
+  }
+
+  /* Adjust margins for text on small screens */
+  .row2,
+  .row3,
+  .coll2 {
+    margin-top: 10px;
+  }
+
+  /* Center the form submit button on small screens */
+  .form1 q-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Reduce height and padding for the green section on small screens */
+  .rec6 {
+    padding: 10px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 </style>

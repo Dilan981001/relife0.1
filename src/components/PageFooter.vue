@@ -435,4 +435,34 @@ p4 {
   width: 200px;
   height: 200px;
 }
+@media (max-width: 1199px) {
+  .right-panel {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 991px) {
+  .right-panel {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .f1{
+    justify-content: center;
+    margin-left: -20px;
+  }
+  .right-panel {
+    margin-left: 0;
+    display: block;
+    text-align: center;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .col-lg-3 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
 </style>
