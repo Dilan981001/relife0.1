@@ -71,13 +71,14 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #284b36;
+  background-color: #284b3680;
   padding: 20px;
   position: fixed;
   z-index: 10;
   left: 0;
   right: 0;
   top: 0;
+  backdrop-filter: blur(5px);
 }
 
 .logo {
