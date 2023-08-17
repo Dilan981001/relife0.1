@@ -208,5 +208,54 @@ export default {
   color: #ffffff;
   background: #284b36;
 }
+@media (max-width: 768px) {
+  .right-panel {
+    display: none;
+  }
 
+  .login-form {
+    margin: 20px;
+  }
+
+  .left-panel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  .menu-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .bar {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+  }
+
+  .top-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #284b36;
+    width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .left-top-panel {
+    padding: 10px;
+  }
+}
 </style>
