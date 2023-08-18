@@ -1,5 +1,5 @@
 <template>
-  <div class="container row justify-center q-pt-lg q-mt-lg bg-blue">
+  <div class="container row justify-center q-pt-lg q-mt-lg ">
     
       <ProductBox />
   
@@ -33,6 +33,7 @@ export default {
 
 
 .container{
+  background-color: #284b36;
 
 margin-top: 0;
 }
