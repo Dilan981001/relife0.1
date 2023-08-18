@@ -12,10 +12,15 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@quasar/extras": "^1.0.0",
+<<<<<<< Updated upstream
+=======
+    "axios": "^1.4.0",
+    "bootstrap-icons": "^1.10.5",
+>>>>>>> Stashed changes
     "core-js": "^3.8.3",
     "quasar": "^2.0.0",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
