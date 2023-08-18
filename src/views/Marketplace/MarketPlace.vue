@@ -36,5 +36,7 @@ export default {
 </script>
 
 <style scoped>
-
+.grid-container{
+  background-color:#284b36 ;
+}
 </style>

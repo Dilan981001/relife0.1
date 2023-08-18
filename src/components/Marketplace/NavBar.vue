@@ -1,6 +1,6 @@
 <template>
  <div class="navbar">
-  <q-header class="header-container full-width items-center justify-around bg-primary text-white row q-pt-sm q-pb-sm">
+  <q-header class="header-container full-width items-center justify-around text-white row q-pt-sm q-pb-sm">
     <div class="logo">
       <q-btn
         class="btn"
@@ -122,14 +122,17 @@ computed: mapGetters({
 
 <style scoped>
 .navbar{
-  background-color: rgb(26, 104, 53);
+  margin-top: -70px;
+  background: #284b36;
 }
 .header-container {
   top: 0;
   left: 0;
   right:0;
   position: sticky;
-  
+  background-color: #284b368e;
+  position: fixed;
+  backdrop-filter: blur(5px);
 }
 
 .button-container {

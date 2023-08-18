@@ -113,5 +113,6 @@ export default {
 .image-container {
   border: 10px solid white;
   width: 220px;
+  border-radius: 10px;
 }
 </style>
