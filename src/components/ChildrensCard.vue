@@ -256,8 +256,7 @@ components: {
   padding-top: 0px;
   font-weight: bold;
   
-  
-  
+
 }
 
 </style>
