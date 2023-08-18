@@ -12,6 +12,7 @@
         <div class="login-label">
           <span class="label-text">RELIFE</span>
         </div>
+
        
         
 
@@ -38,6 +39,7 @@
     <q-btn class="q-mr-md-d" type="submit" label="CREATE ACCOUNT" />
   </div>
 </form>
+
 
       </div>
     
