@@ -12,11 +12,6 @@
         <div class="login-label">
           <span class="label-text">RELIFE</span>
         </div>
-
-       
-        
-
-
         
       <form @submit.prevent="saveData" method="post">
   <div class="form-group">
@@ -99,24 +94,7 @@ export default {
              },
 
   methods: {
-    // saveData()
-    //               {
-    //                axios.post("http://localhost:8081/user/save", this.user)
-    //                .then(
-    //                  ({data})=>{
-    //                   console.log(data);
-    //                    try 
-    //                      {
-    //                         alert("User Registation Successfully");
-                            
-    //                       } 
-    //                   catch(err) 
-    //                       {
-    //                         alert("failed");
-    //                       }    
-    //                  }
-    //                )
-    //               },
+  
     saveData() {
     const dataToSend = {
       fullname: this.user.fullname,

@@ -5,20 +5,7 @@
         <div class="login-label">
           <span class="label-text">RELIFE</span>
         </div>
-        <!-- <form   @submit.prevent="LoginData" method="post">
-        <div class="form-group"    >
-          <label for="email">Email</label>
-          <input type="email" id="email" v-model="user.email" />
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" v-model="user.password" />
-        </div>
-        <div class="form-actions">
-          <q-btn class="q-mr-md-d"  type="submit" label="Sign In" @click="goToFullDashboard" />
-          <q-btn class="q-mr-md-d"  to="/signup" label="Sign Up"  />
-        </div>
-      </form> -->
+        
       <form @submit.prevent="LoginData" method="post">
     <div class="form-group">
       <label for="email">Email</label>
@@ -88,77 +75,15 @@ export default {
              console.log("mounted() called.......");
          },
   methods: {
-    // LoginData()
-    //           {
-    //             const dataToSend = {
-     
-    //   email: this.user.email,
-    //   password: this.user.password
-    // };
-    //            axios.post("http://localhost:8081/user/login", dataToSend)
-    //            .then(
-    //              ({dataToSend})=>{
-    //               console.log(dataToSend);
-    //               try {
-    //               if (dataToSend.message === "Email not exits") 
-    //                   {
-    //                    alert("Email not exits");
-                       
-    //                     }
-    //                      else if(dataToSend.message == "Login Success")
-    //                     {
-                       
-    //                      this.$router.push({ name: '/fulldashboard' })
-    //                     }
-    //                      else 
-    //                     { 
-    //                         alert("Incorrect Email and Password not match");
-    //                     }
-
-    //                     } catch (err) {
-    //                     alert("Error, please try again");
-    //                     }    
-    //              }
-    //            )
-              // },
+    
               LoginData() {
       const dataToSend = {
         email: this.user.email,
         password: this.user.password
       };
-      axios
-        .post("http://localhost:8081/user/login", dataToSend)
+      
 
-
-        // .then(response => {
-        // if (!response.data.success) {                 
-        //   alert("User Registration Successful");
-        //   this.$router.push('/signin');
-        // } else {
-        //   console.log(response.data.error);
-        //   alert("Failed to register user: " + response.data.message);
-          
-        // }
-
-
-  //       .then(response => { 
-  //         const status = response.data.status;
-
-  //         if (status === false) {
-  //           alert("log in success");
-  //           //  this.$router.push({ name: 'fulldashboard' });
-  //            this.$router.push('/fulldashboard');
-  //         } else {
-  //           alert("Incorrect Email and Password not match");
-  //         }
-  //       })
-  //       .catch(error => {
-  //         console.error(error);
-  //         alert("Error, please try again");
-  //       });
-    
-  // },
-//   
+ 
 axios.post("http://localhost:8081/user/login", dataToSend)
         .then(response => {
           const status = response.data.status;
