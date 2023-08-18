@@ -39,13 +39,13 @@
    
     <div class="right-panel">
       <div class="top-panel">
-        <q-btn-group flat >
+        <q-btn-group flat  >
           <q-img src="relife3.ico" width="60px" height="35px" class="q-mr-md" />
           <div class="form-actions">
             <q-btn to="/home" label="HOME" class="q-mr-md" />
           </div>
           <div class="form-actions">
-            <q-btn label="ABOUT US" class="q-mr-md" />
+            <q-btn label="ABOUT US" class="q-mr-md" to="/aboutus" />
           </div>
           <div class="form-actions">
             <q-btn label="NOTIFICATIONS" class="q-mr-md"/>
@@ -292,5 +292,44 @@ axios.post("http://localhost:8081/user/login", dataToSend)
   font-weight: bold;
   color: #ffffff;
   background: #284b36;
+}
+@media (max-width: 768px) {
+  .right-panel {
+    display: none;
+  }
+
+  .top-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #284b36;
+    color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    z-index: 1;
+  }
+
+  .menu-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .bar {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+  }
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="left-panel">
       <div class="left-top-panel">
 
-        <q-btn label="SIGN IN" to="/signin" class="q-mr-md-e" />
+       <!-- <q-btn label="SIGN IN" to="/signin" class="q-mr-md-e" />-->
 
       </div>
 
@@ -31,11 +31,13 @@
         </div>
         <div class="form-actions">
           <q-btn class="q-mr-md-d"  type="submit" label="CREATE ACCOUNT" @click="goToFullDashboard" />
-<<<<<<< Updated upstream
-=======
+
           
           <q-btn class="q-mr-md-d"  type="submit" label="Sign In" to="/signin" />
->>>>>>> Stashed changes
+
+          <!--<h7><b>OR</b></h7>-->
+        
+
 
         </div>
       </form> -->
@@ -73,7 +75,7 @@
             <q-btn to="/home"  label="HOME" class="q-mr-md" />
           </div>
           <div class="form-actions">
-            <q-btn label="ABOUT US" class="q-mr-md" />
+            <q-btn label="ABOUT US" class="q-mr-md" to="/aboutus" />
           </div>
           <div class="form-actions">
             <q-btn label="NOTIFICATIONS" class="q-mr-md"/>
@@ -294,5 +296,54 @@ export default {
   color: #ffffff;
   background: #284b36;
 }
+@media (max-width: 768px) {
+  .right-panel {
+    display: none;
+  }
 
+  .login-form {
+    margin: 20px;
+  }
+
+  .left-panel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  .menu-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .bar {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+  }
+
+  .top-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #284b36;
+    width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .left-top-panel {
+    padding: 10px;
+  }
+}
 </style>

@@ -3,13 +3,12 @@ import App from './App.vue'
 import router from './router'
 import { Quasar } from 'quasar'
 import quasarUserOptions from './quasar-user-options'
-<<<<<<< Updated upstream
-=======
+
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import store from './store'
 
 
->>>>>>> Stashed changes
-
-const app = createApp(App).use(Quasar, quasarUserOptions)
+const app = createApp(App).use(store).use(Quasar, quasarUserOptions)
 
 app.use(router)
 
