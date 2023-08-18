@@ -7,35 +7,38 @@
 
       </div>
 
-
-      <div class="login-form">
+      
+      <div class="login-form"   >
         <div class="login-label">
           <span class="label-text">RELIFE</span>
         </div>
-        <div class="form-group">
-          <label for="email">Full Name</label>
-          <input type="email" id="email" v-model="fullname" />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" v-model="email" />
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" v-model="password" />
-        </div>
-        <div class="form-group">
-          <label for="email">Confirm Password</label>
-          <input type="email" id="email" v-model="confirmpassword" />
-        </div>
-        <div class="form-actions">
-          <q-btn class="q-mr-md-d"  type="submit" label="CREATE ACCOUNT" @click="goToFullDashboard" />
-          <!--<h7><b>OR</b></h7>-->
-          <q-btn class="q-mr-md-d"  type="submit" label="Sign In" to="/signin" />
+        
+      <form @submit.prevent="saveData" method="post">
+  <div class="form-group">
+    <label for="fullname">Full Name</label>
+    <input type="text" name="fullname" id="fullname" v-model="user.fullname" />
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" v-model="user.email" />
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" v-model="user.password" />
+  </div>
+  <div class="form-group">
+    <label for="confirmPassword">Confirm Password</label>
+    <input type="password" id="confirmPassword" v-model="confirmpassword" />
+  </div>
+  <div class="form-actions">
+    <q-btn class="q-mr-md-d" type="submit" label="CREATE ACCOUNT" />
+  </div>
+</form>
 
-        </div>
       </div>
+    
     </div>
+
     <div class="right-panel">
       <div class="top-panel">
         <q-btn-group flat>
@@ -65,20 +68,77 @@
 </template>
 
 <script>
+
+  import axios from 'axios';
+ 
+
 export default {
+  
   data() {
     return {
-      email: "",
-      password: "",
-    };
+      result:{},
+      user:{
+        fullname:"",
+        email: "",
+      password: ""
+      }
+      
+    }
   },
+  created(){
+
+  },
+  mounted() {
+                 console.log("mounted() called.......");
+             },
+
   methods: {
+    // saveData()
+    //               {
+    //                axios.post("http://localhost:8081/user/save", this.user)
+    //                .then(
+    //                  ({data})=>{
+    //                   console.log(data);
+    //                    try 
+    //                      {
+    //                         alert("User Registation Successfully");
+                            
+    //                       } 
+    //                   catch(err) 
+    //                       {
+    //                         alert("failed");
+    //                       }    
+    //                  }
+    //                )
+    //               },
+    saveData() {
+    const dataToSend = {
+      fullname: this.user.fullname,
+      email: this.user.email,
+      password: this.user.password
+    };
+    axios.post("http://localhost:8081/user/save", dataToSend)
+      .then(response => {
+        if (!response.data.success) {                 
+          alert("User Registration Successful");
+          this.$router.push('/signin');
+        } else {
+          console.log(response.data.error);
+          alert("Failed to register user: " + response.data.message);
+          
+        }
+      })
+      .catch(error => {
+        console.error(error);
+        alert("An error occurred while registering user");
+      });
+  },
     submitForm() {
       // Perform sign-in logic here
       this.goToFullDashboard();
     },
     goToFullDashboard() {
-      this.$router.push('/fulldashboard');
+      this.$router.push('/signin');
     },
   },
 };
