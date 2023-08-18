@@ -16,19 +16,19 @@
       <form @submit.prevent="saveData" method="post">
   <div class="form-group">
     <label for="fullname">Full Name</label>
-    <input type="text" name="fullname" id="fullname" v-model="user.fullname" />
+    <input type="text" name="fullname" id="fullname" v-model="user.fullname" required/>
   </div>
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" name="email" id="email" v-model="user.email" />
+    <input type="email" name="email" id="email" v-model="user.email" required/>
   </div>
   <div class="form-group">
     <label for="password">Password</label>
-    <input type="password" name="password" id="password" v-model="user.password" />
+    <input type="password" name="password" id="password" v-model="user.password" required/>
   </div>
   <div class="form-group">
     <label for="confirmPassword">Confirm Password</label>
-    <input type="password" id="confirmPassword" v-model="confirmpassword" />
+    <input type="password" id="confirmPassword" v-model="confirmpassword" required/>
   </div>
   <div class="form-actions">
     <q-btn class="q-mr-md-d" type="submit" label="CREATE ACCOUNT" />
