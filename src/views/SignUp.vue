@@ -12,35 +12,12 @@
         <div class="login-label">
           <span class="label-text">RELIFE</span>
         </div>
-        <!-- <form   @submit.prevent="saveData" method="post"> 
-        <div class="form-group"  >
-          <label for="f_name">Full Name</label>
-          <input type="text" name="f_name"  id="f_name" v-model="this.user.f_name" />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" v-model="this.user.email" />
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" name="password"  id="password" v-model="this.user.password" />
-        </div>
-        <div class="form-group">
-          <label for="password">Confirm Password</label>
-          <input type="password" id="password" v-model="confirmpassword" />
-        </div>
-        <div class="form-actions">
-          <q-btn class="q-mr-md-d"  type="submit" label="CREATE ACCOUNT" @click="goToFullDashboard" />
 
-          
-          <q-btn class="q-mr-md-d"  type="submit" label="Sign In" to="/signin" />
-
-          <!--<h7><b>OR</b></h7>-->
+       
         
 
 
-        </div>
-      </form> -->
+        
       <form @submit.prevent="saveData" method="post">
   <div class="form-group">
     <label for="fullname">Full Name</label>
@@ -62,6 +39,7 @@
     <q-btn class="q-mr-md-d" type="submit" label="CREATE ACCOUNT" />
   </div>
 </form>
+
 
       </div>
     
