@@ -12,6 +12,11 @@
         <div class="login-label">
           <span class="label-text">RELIFE</span>
         </div>
+
+       
+        
+
+
         
       <form @submit.prevent="saveData" method="post">
   <div class="form-group">
@@ -34,6 +39,7 @@
     <q-btn class="q-mr-md-d" type="submit" label="CREATE ACCOUNT" />
   </div>
 </form>
+
 
       </div>
     
