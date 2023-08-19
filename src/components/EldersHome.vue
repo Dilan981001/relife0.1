@@ -1,13 +1,17 @@
 <template>
-    
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
   <div class="background">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  
     
    
     <div>
       <nav-bar/>
+   
     </div>
-    </div>
+ 
+
+  <div class="box2"></div>
+<div>
     <div class="full">
         <div class="row">
         <div class="left col-8">
@@ -31,7 +35,8 @@ opportunities.</h6>
         
     </div>
    <Footer/>
-
+  </div>
+</div>
 </template>
 
 <script>
@@ -58,21 +63,25 @@ export default {
   background-color: #284b36;
   position: relative; /* Ensure relative positioning */
   background-image: url('/public/Vector 40.png'),url('/public/Vector 7.png'),url('/public/Vector 8.png'),url('/public/Vector 14.png'),url('/public/Vector 19.png'),url('/public/Vector 18.png'); /* Set the path to your background image */
-  background-position: 25px 100px,10px 1268px,12px 1554px,14px 2287px,12px 3604px,10px 3883px; /* Center the background image */
+  /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
-
+.box2 {
+  margin-bottom: 30px; /* Adds margin space at the bottom of the box */
+  padding: 20px; /* Adds padding space inside the box */
+  
+}
 .full{
     display: flex;
 }
 
 .left{
-    background-color: white;
+   
     height: 90%;
     margin-top: 70px;
 }
 .rights{
-    background-color: #284b36;
+    
     color: white;
    height: 90%;
     font-family: "Montserrat";
