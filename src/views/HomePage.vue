@@ -36,9 +36,9 @@
                 <q-btn class="rec3" role="button">Join and help them</q-btn>
 
 
-
+                <router-link to="/notificationpage">
                   <i class="bi bi-arrow-right-circle" style="font-size: 34px"></i>
-
+</router-link>
               </div>
             </div>
           </div>
@@ -283,7 +283,7 @@ export default {
 }
 .rec8{
   border-radius: 25px;
-  background:linear-gradient(to right, #284b36, rgba(255, 255, 255, 0.238));
+  background:rgba(255, 255, 255, 0.147);
   padding: 10px;
   width: 250px;
   height: 50px;
@@ -397,6 +397,7 @@ font-size: 20px;
   border-bottom-left-radius: 370px;
   border-top-left-radius: 150px;
   border: 25px solid #00000040; /* Replace #000 with your desired border color */
+
 }
 .img2 {
   display: inline-block;
@@ -419,7 +420,7 @@ font-size: 20px;
 }
 .rec6 {
   border-radius: 70px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.255), rgba(21, 43, 21, 0.479));
+  background: rgba(255, 255, 255, 0.147);
   padding: 20px;
   height: 100px;
   font-family: "Montserrat";
@@ -427,6 +428,7 @@ font-size: 20px;
   justify-content: center;
   margin-left: 100px;
   margin-right: 100px;
+  font-weight: bold;
 
 }
 .h1 {
@@ -518,7 +520,7 @@ h6{
   width: 85%;
   transform: translate(-50%, 5%);
   @media (max-width: 768px) {
-    width: 100%;
+  width: 100%;
   }
 }
 .form-control {
@@ -722,7 +724,7 @@ p4 {
 
   /* Adjust margins and center text for the header on small screens */
   .r1 {
-    margin-top: 10px;
+    margin-top: 1000px;
     text-align: center;
   }
 

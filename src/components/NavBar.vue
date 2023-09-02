@@ -71,7 +71,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #3d7c5667;
+  background-color: #3d7c5625;
   padding: 20px;
   position: fixed;
   z-index: 10;
@@ -84,6 +84,7 @@ export default {
 .logo {
   display: flex;
   align-items: center;
+  margin-left: 100px;
 }
 
 .menu-icon {

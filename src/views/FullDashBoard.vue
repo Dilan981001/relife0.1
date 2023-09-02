@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ParentDash from "@/components/ParentDash.vue";
+import ParentDash from '@/components/ParentDash.vue';
 
 export default {
   components: {

@@ -3,37 +3,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
   
     <div class="box1"></div>
-    <div class="top-panel">
-      <q-btn-group flat>
-        <div class="left-panel">
-          <q-img src="relife3.ico" width="95px" height="54px" class="q-mr-md" />
-        </div>
-
-        <div class="right-panel">
-          <div class="form-actions">
-            <q-btn to="/home" label="HOME" class="q-mr-md" />
-          </div>
-          <div class="form-actions">
-            <q-btn to="/home" label="Elder's home" class="q-mr-md" />
-          </div>
-          <div class="form-actions">
-            <q-btn to="/home" label="children's home" class="q-mr-md" />
-          </div>
-
-          <div class="form-actions">
-            <q-btn to="/notificationpage" label="NOTIFICATIONS" class="q-mr-md" />
-          </div>
-          <div class="form-actions">
-            <q-btn label="DONATE" class="q-mr-md" />
-          </div>
-          <div class="form-actions">
-            <q-btn to="/marketplace" label="MarketPlace" class="q-mr-md" />
-          </div>
-          <div class="form-actions">
-            <q-btn to="/signin" label="Sign in / Sign up " class="q-mr-md" />
-          </div>
-        </div>
-      </q-btn-group>
+    <div>
+      <nav-bar/>
     </div>
 
     <div class="box2"></div>
@@ -77,7 +48,9 @@
 </template>
 
 <script>
+import NavBar from '@/components/NavBar.vue';
 export default {
+  NavBar,
   data() {
     return {
       abandonedPeoplePosts: [

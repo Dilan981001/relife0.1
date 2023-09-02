@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import SideBar from "@/components/SideBar.vue";
+import SideBar from "./SideBar.vue";
 
-import DashBoard from "@/components/DashBoard.vue";
+import DashBoard from "./DashBoard.vue";
 
 export default {
   components: {
