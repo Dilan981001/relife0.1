@@ -71,7 +71,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #3d7c5625;
+  background-color: #2020205b;
   padding: 20px;
   position: fixed;
   z-index: 10;

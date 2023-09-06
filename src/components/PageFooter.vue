@@ -135,7 +135,7 @@
 
 <style scoped>
 .back{
-  background-color: #284b36;
+ 
   margin-right: 100px;
   margin-left: 100px;
 }
@@ -170,7 +170,7 @@ font-size: 20px;
 .horizontal-line {
   border: none;
   margin: 50px 0; /* Adjust the margin as needed */
-  background: #284b36;
+ 
 }
 .box2 {
   margin-bottom: 30px; /* Adds margin space at the bottom of the box */
@@ -197,7 +197,7 @@ font-size: 20px;
 }
 .q-mr-md-d-d {
   font-weight: bold;
-  background: #284b36;
+ 
   color: #ffffff;
 }
 .vertical-line {
@@ -210,7 +210,7 @@ font-size: 20px;
 }
 .rec1 {
   border-radius: 25px;
-  background: #284b36;
+ 
   padding: 10px;
   width: 250px;
   height: 50px;
@@ -297,15 +297,7 @@ h2 {
   align-content: center;
 
 }
-.card-img-top {
-  border-radius: 50%;
-  border: 8px solid #284b36;
-  width: 200px;
-  height: 200px;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-}
+
 .card {
   height: 600px;
   width: 250px;
@@ -355,7 +347,7 @@ h2 {
   height: auto;
 }
 .footer {
-  background: #284b36;
+ 
   height: 10%;
   width: 100%;
 }

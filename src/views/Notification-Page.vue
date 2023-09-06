@@ -1,12 +1,10 @@
 <template>
-  <div class="notification-page">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-  
-    <div class="box1"></div>
+    <div class="notification-page">
+      
     <div>
-      <nav-bar/>
+    <NavBar/>
     </div>
-
     <div class="box2"></div>
 
     <h2>Abandoned People's Posts</h2>
@@ -44,13 +42,19 @@
         <p>Contact: {{ post.contact }}</p>
       </li>
     </ul>
+    <div class="box2"></div>
+    <div>
+      <page-footer/>
+    </div>
+    <div class="box1"></div>
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue';
+import PageFooter from '@/components/PageFooter.vue';
 export default {
-  NavBar,
+
   data() {
     return {
       abandonedPeoplePosts: [
@@ -102,12 +106,17 @@ export default {
       loadingElderHomePosts: false,
     };
   },
+  components:{
+    NavBar,
+  PageFooter
+  }
 };
 </script>
 
 <style scoped>
 .notification-page {
-  background-color: #3b676e;
+  background-color:  #284b36;
+ 
 }
 
 .post-item {
@@ -120,22 +129,10 @@ export default {
   background-color: #ffffff;
 
 }
-.right-panel {
-  margin-left: 270px;
-  display: flex;
-}
-.top-panel {
-  color: #cccccc;
-  display: flex;
-  justify-content: flex-start;
-  padding: 20px;
-  font-weight: bold;
-  height: 20px;
-}
 .box2 {
-  margin-bottom: 30px; /* Adds margin space at the bottom of the box */
+  margin-bottom: 50px; /* Adds margin space at the bottom of the box */
   padding: 20px; /* Adds padding space inside the box */
-  margin-top: 30px;
+  
 }
 .box1 {
   /* Adds margin space at the bottom of the box */

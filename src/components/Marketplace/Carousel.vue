@@ -20,12 +20,7 @@
         />
           </div>
         </q-carousel-slide>
-        <q-carousel-slide name="second" img-src="https://cdn.quasar.dev/img/parallax1.jpg" >
-          <div class="absolute-bottom custom-caption">
-            <div class="text-h2">Second stop</div>
-            <div class="text-subtitle1">Famous City</div>
-          </div>
-        </q-carousel-slide>
+    
       </q-carousel>
     </div>
   </template>
@@ -51,6 +46,7 @@
     background-color: rgba(0, 0, 0, .3)
 
 .no-padding 
+
   padding: 0
   margin: 0
 
