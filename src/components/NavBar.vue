@@ -33,7 +33,7 @@ export default {
         { to: '/home', label: 'HOME' },
         { to: '/EldersHome', label: "Elder's home" },
         { to: '/ChildrensHome', label: "children's home" },
-        { to: '/notificationpage', label: 'NOTIFICATIONS' },
+        { to: '/notificationpage', label: 'Posts' },
         { to: '/donatefund', label: 'DONATE' },
         { to: '/marketplace', label: 'MarketPlace' },
         { to: '/signin', label: 'Sign in / Sign up' },
