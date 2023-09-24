@@ -72,7 +72,7 @@ export default {
             price:this.price  
         }
 
-        axios.post('https://limitless-lake-55070.herokuapp.com/product/add',newProduct)
+        axios.post('http://localhost:8081/product/add',newProduct)
         .then(
             this.$router.push({name:'AdminProduct'})
         )

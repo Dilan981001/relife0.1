@@ -26,7 +26,6 @@ export default {
         getCategories: async function({commit}){
             try {
                 let response =await ProductService.getAllCategories()
-               
                 commit("GET_CATEGORY_SUCCESS",{categories:response.data})
                
             } catch (error) {

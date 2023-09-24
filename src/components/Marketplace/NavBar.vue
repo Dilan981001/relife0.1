@@ -34,7 +34,8 @@
         <q-btn
           color="white"
           text-color="black"
-          label="Buy Products"
+          label="Admin"
+          to="/admin"
           size="70%"
           class="text-weight-bold q-ml-md"
         />

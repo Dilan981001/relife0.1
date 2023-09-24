@@ -18,7 +18,7 @@ export class ProductService{
     }
 
     static getAllCategories(){
-        let dataURL = `http://localhost:8081/category/`;
+        let dataURL = `http://localhost:8081/category/list`;
         return axios.get(dataURL)
     }
 
