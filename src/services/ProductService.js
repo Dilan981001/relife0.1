@@ -3,11 +3,12 @@ import axios from 'axios';
 export class ProductService{
 
    // static serverURL = `https://dummyjson.com/products`;
-   static serverURL = `https://limitless-lake-55070.herokuapp.com`;
-
+ //  static serverURL = `https://limitless-lake-55070.herokuapp.com`;
+ static serverURL = `http://localhost:8081/`;
 
     static getAllProducts(){
-        let dataURL = `https://limitless-lake-55070.herokuapp.com/product/`;
+        let dataURL = `http://localhost:8081/product/`;
+       
         return axios.get(dataURL)
     }
 
@@ -17,7 +18,7 @@ export class ProductService{
     }
 
     static getAllCategories(){
-        let dataURL = `https://limitless-lake-55070.herokuapp.com/category/`;
+        let dataURL = `http://localhost:8081/category/list`;
         return axios.get(dataURL)
     }
 

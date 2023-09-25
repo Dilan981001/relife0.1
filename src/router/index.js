@@ -23,6 +23,8 @@ import AddCategory from '@/views/Marketplace/Category/AddCategory.vue';
 import AdminProductPage from '@/views/Marketplace/Product/AdminProductPage.vue';
 import AdminAddProduct from '@/views/Marketplace/Product/AdminAddProduct.vue';
 import AdminEditProduct from '@/views/Marketplace/Product/AdminEditProduct.vue';
+import CategoryPage from '@/views/Marketplace/Category/CategoryPage.vue';
+import AdminPage from '@/views/Marketplace/AdminPage.vue';
 
 const routes = [
   {
@@ -105,9 +107,19 @@ const routes = [
     component: CartPage
   },
   {
+    path: '/admin',
+    name: 'Admin',
+    component: AdminPage
+  },
+  {
     path: '/admin/category/add',
     name: 'AddCategory',
     component: AddCategory
+  },
+  {
+    path: '/admin/category',
+    name: 'CategoryPage',
+    component: CategoryPage
   },
   {
     path: '/admin/product',

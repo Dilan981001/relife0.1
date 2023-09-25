@@ -16,6 +16,12 @@
           filled
           label="Description "
         />
+        <q-input v-model='categoryImage'
+          class="bg-white"
+          dense
+          filled
+          label="Category Image "
+        />
         <div>
           <q-btn label="Submit" type="submit" color="primary" />
         </div>
@@ -26,35 +32,38 @@
 
 <script >
 import axios from 'axios';
-
-
-
+import Swal from 'sweetalert2';
 export default{
 data(){
   return {
     categoryName:'',
-    categoryDescription:''
+    categoryDescription:'',
+    categoryImage:''
   }
 },
 methods:{
  async addCategory(){
     const newCategory={
-      categoryName: "asdasd",
-      categoryDescription: "asdasd",
-      imageUrl: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80"
+      categoryName:this.categoryName,
+      description: this.categoryDescription,
+      imageUrl: this.categoryImage
     }
     
-    const baseURL = "https://limitless-lake-55070.herokuapp.com";
+   
       axios({
         method: "post",
-        url: `${baseURL}/category/create`,
+        url: `http://localhost:8081/category/create`,
         data: JSON.stringify(newCategory),
         headers: {
           "Content-Type": "application/json",
         },
       })
-        .then((response) => {
-         console.log(response);
+        .then(() => {
+         Swal.fire({
+          text:"Category added successfully",
+          icon:"success",
+         })
+       
         })
         .catch((err) => {
           console.log(err);
