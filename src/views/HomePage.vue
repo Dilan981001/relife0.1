@@ -269,7 +269,7 @@ export default {
 }
 .rec5{
   border-radius: 25px;
-  background:linear-gradient(to right, #284b36, rgba(255, 255, 255, 0.238));
+  background: rgba(255, 255, 255, 0.238);
   padding: 10px;
   width: 250px;
   height: 50px;
@@ -377,18 +377,7 @@ font-size: 20px;
   background-color: rgb(255, 255, 255); /* Adjust the color as needed */
   margin: 0 0px; /* Adjust the margin as needed */
 }
-.rec1 {
-  border-radius: 25px;
-  background: #284b36;
-  padding: 10px;
-  width: 250px;
-  height: 50px;
-  font-family: "Montserrat";
-  font-size: 15px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  align-content: center;
-}
+
 .img1 {
   width: 75%;
   height: auto;
@@ -429,6 +418,7 @@ font-size: 20px;
   margin-left: 100px;
   margin-right: 100px;
   font-weight: bold;
+  margin-top: -20px;
 
 }
 .h1 {
