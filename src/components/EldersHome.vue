@@ -1,8 +1,9 @@
+
 <template>
   <div class="background">
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
     />
 
     <div>
@@ -10,7 +11,7 @@
     </div>
 
     <div class="box2"></div>
-    
+
     <div class="search-bar">
       <!-- Placeholder for the search bar -->
       <div class="search-input">
@@ -53,7 +54,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
 
     <div>
@@ -62,7 +63,7 @@
           <div class="left col-8">
             <div><elder-card /></div>
           </div>
-        
+
         </div>
       </div>
       <Footer />
@@ -106,7 +107,7 @@ export default {
 }
 
 .filter2{
- padding-right: 900px;
+  padding-right: 900px;
   justify-content: flex;
 }
 .filter-container {
@@ -208,11 +209,11 @@ button {
   position: relative;
   /* Ensure relative positioning */
   background-image: url('/public/Vector 40.png'),
-    url('/public/Vector 7.png'),
-    url('/public/Vector 8.png'),
-    url('/public/Vector 14.png'),
-    url('/public/Vector 19.png'),
-    url('/public/Vector 18.png');
+  url('/public/Vector 7.png'),
+  url('/public/Vector 8.png'),
+  url('/public/Vector 14.png'),
+  url('/public/Vector 19.png'),
+  url('/public/Vector 18.png');
   /* Set the path to your background image */
   background-repeat: no-repeat;
   /* Prevent the background image from repeating */
