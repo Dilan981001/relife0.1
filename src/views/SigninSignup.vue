@@ -76,7 +76,7 @@ export default {
          },
   methods: {
     
-              LoginData() {
+      LoginData() {
       const dataToSend = {
         email: this.user.email,
         password: this.user.password

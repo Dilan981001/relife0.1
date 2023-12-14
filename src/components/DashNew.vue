@@ -15,9 +15,43 @@
     </q-toolbar>
     <div class="flex flex-center column">
       <q-avatar size="120px">
-        <img src="/dp1.jpg"  alt=""/>
+        <img src="https://cdn.quasar.dev/img/boy-avatar.png">
       </q-avatar>
-      <q-item-label caption class="q-my-md">Your Activity</q-item-label>
+      <div class="q-pa-md">
+      <!--dropdown button-->
+    <q-btn-dropdown
+      class="glossy"
+      color="green"
+      label="Account Settings"
+    >
+      <div class="row no-wrap q-pa-md">
+        <div class="column">
+          <div class="text-h6 q-mb-md">Settings</div>
+          <q-toggle v-model="mobileData" label="Meesage" />
+          <q-toggle v-model="bluetooth" label="Posts" />
+        </div>
+
+        <q-separator vertical inset class="q-mx-lg" />
+
+        <div class="column items-center">
+          <q-avatar size="72px">
+            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+          </q-avatar>
+
+          <div class="text-subtitle1 q-mt-md q-mb-xs">John Doe</div>
+
+          <q-btn
+            color="green"
+            label="More Setting"
+            push
+            size="sm"
+            v-close-popup
+          />
+        </div>
+      </div>
+    </q-btn-dropdown>
+  </div>
+
       <div class="text-h5"><strong>86%</strong></div>
     </div>
     <q-card class="q-mx-md" flat bordered>
@@ -32,7 +66,7 @@
         <div class="text-overline text-weight-bolder">Tikiri Sewana</div>
         <q-space></q-space>
         <q-avatar size="25px">
-          <img src="/dp1.jpg"  alt=""/>
+          <img src="https://cdn.quasar.dev/img/boy-avatar.png">
         </q-avatar>
         <div class="text-overline q-ml-sm">Madhushan</div>
       </q-toolbar>
@@ -94,7 +128,7 @@
     <div class="q-mt-lg"></div>
     <q-card class="q-mx-md" flat bordered>
       <q-toolbar class="">
-        <div class="text-overline">Contact More</div>
+        <q-btn color="green"  label="Contact More" class="full-width" />
         <q-space></q-space>
         <font-awesome-icon icon="fa-solid fa-arrow-right" size="10px" color="green" />
       </q-toolbar>
@@ -103,11 +137,10 @@
 
   
   </div>
-
-    </q-drawer>
+</q-drawer>
 <!--end of right side bar-->
         
-      <parent-dash />
+<parent-dash />
     
 </q-page-container>
   </q-layout>

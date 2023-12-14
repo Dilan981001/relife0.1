@@ -100,7 +100,10 @@
 </template>
 
 <script>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { ref } from "vue";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 export default {
@@ -122,11 +125,6 @@ export default {
 
 <style scoped>
 .right-sidebar-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   z-index: 1000;
 }
 </style>
