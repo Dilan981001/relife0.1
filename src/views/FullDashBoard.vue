@@ -1,17 +1,17 @@
 <template>
   <div>
     <q-page-container>
-    <parent-dash />
+    <DashNew />
     </q-page-container>
   </div>
 </template>
 
 <script>
-import ParentDash from '@/components/ParentDash.vue';
+import DashNew from '@/components/DashNew.vue';
 
 export default {
   components: {
-    ParentDash
+    DashNew
   }
 }
 </script>

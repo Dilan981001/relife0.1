@@ -1,5 +1,5 @@
 <template>
-  <q-drawer show-if-above side="left" behavior="desktop" :width="90" class="colorBackground">
+  <q-drawer show-if-above side="left" behavior="desktop" :width="100" class="colorBackground">
     <div class="flex flex-center column q-mt-lg q-mb-lg">
       <img src="/relife3.ico" alt="Relife icon" style="width: 70%; height: 70%;"  />
     </div>
@@ -58,7 +58,6 @@ import { ref } from "vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import RightSideBar from "./RightSideBar.vue";
 
 library.add(fas);
 
@@ -67,7 +66,7 @@ export default {
   components: {
     FontAwesomeIcon,
     // eslint-disable-next-line vue/no-unused-components
-    RightSideBar
+
 
   },
   setup() {
@@ -81,6 +80,7 @@ export default {
 <style>
 .colorBackground {
   background: #284b36;
+  z-index: 1000;
 }
 .q-item_section--side {
   padding-right: 0px !important;

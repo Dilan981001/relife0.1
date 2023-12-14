@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md"  >
+  <div class="q-pa-md" :width="500" >
     <q-toolbar class="q-ma-sm">
       <q-input
           outlined
