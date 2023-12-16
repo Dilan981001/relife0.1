@@ -299,7 +299,6 @@ font-size: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 30px;
-
   margin-right: 100px;
 }
 .h1 {
@@ -564,6 +563,7 @@ p4 {
     width: 100%;
     margin-bottom: 20px;
   }
+
   (max-width: 1200px) {
     /* Adjust the styles for large-sized devices */
     .card-container {

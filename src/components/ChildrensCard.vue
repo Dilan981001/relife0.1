@@ -105,6 +105,7 @@
       </div>
     </div>
   </div>
+  
 
   <div class="card">
     <div class="card-body">
@@ -193,23 +194,7 @@ export default {
     width: 100%;
   }
 }
-.card {
-  height: 250px;
-  width: 98%;
-  background: #1d402b;
-  border-radius: 30px 30px 30px 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: grid;
-  margin-bottom: 50px;
-  display: flex;
-  color: white;
-  font-family: "Montserrat";
-  font-size: 18px;
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-}
+
 .leftside {
   padding-left: 10px;
 }
@@ -258,5 +243,44 @@ export default {
   padding-left: 40px;
   padding-top: 0px;
   font-weight: bold;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+.card-img-top {
+  border-radius: 50%;
+  border: 8px solid #284b36;
+  width: 200px;
+  height: 200px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.card-main-body{
+  margin-top: -40px;
+}
+.card {
+  height: 600px;
+  width: 250px;
+  background: radial-gradient(ellipse at center, #ffffff3d,#346045, rgb(17, 35, 24));
+  border-radius: 30px 30px 30px 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.card-text{
+  margin-top: -30px;
+}
+.shadow{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 </style>
