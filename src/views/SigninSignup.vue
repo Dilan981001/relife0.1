@@ -22,7 +22,7 @@
     </div>
     <div class="form-actions">
      <q-btn class="q-mr-md-d" type="submit" label="Sign In" />
-     <q-btn class="q-mr-md-d" to="/signup" label="Sign in as provider" />
+     <q-btn class="q-mr-md-d" to="/signup" label="Sign Up" />
     </div>
   </form>
       </div>
