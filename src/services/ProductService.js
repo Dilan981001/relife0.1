@@ -23,7 +23,7 @@ export class ProductService{
     }
 
     static getAllCartItems(token){
-        let dataURL = `https://limitless-lake-55070.herokuapp.com/cart/?token=${token}`;
+        let dataURL = `http://localhost:8081/cart/?token=${token}`;
         return axios.get(dataURL)
     }
 }

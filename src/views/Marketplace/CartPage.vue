@@ -99,9 +99,10 @@ export default{
   },
   methods:{
     listCartItems(){
-      axios.get(`https://limitless-lake-55070.herokuapp.com/cart/?token=${this.token}`)
+      axios.get(`http://localhost:8081/cart/?token=${this.token}`)
       .then(res=>{
         const result = res.data;
+        console.log(result);
         this.cartItems=result.cartItems;
         this.totalcost=result.totalCost;
       }).catch(err=>{
@@ -109,7 +110,7 @@ export default{
       })
     },
     deleteRow(itemId){
-        axios.delete(`https://limitless-lake-55070.herokuapp.com/cart/delete/${itemId}/?token=${this.token}`)
+        axios.delete(`http://localhost:8081/cart/delete/${itemId}/?token=${this.token}`)
         .then(res=>{
           if(res.status==200){
             this.$router.go(0);
