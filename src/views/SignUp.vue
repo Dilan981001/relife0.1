@@ -225,6 +225,7 @@ export default {
   background-color: #284b36;
   display: flex;
   flex-direction: column;
+  height: 1000px;
 }
 
 .top-panel {

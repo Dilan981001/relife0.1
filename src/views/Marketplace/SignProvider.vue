@@ -54,7 +54,43 @@
               />
             </div>
             <div class="form-group">
-              <label for="confirmPassword">Description </label>
+              <label for="hname">House Name </label>
+              <input
+                type="text"
+                id="hname"
+                v-model="hname"
+                required
+              />
+            </div>
+             <div class="form-group">
+              <label for="description">Capacity </label>
+              <input
+                type="number"
+                id="capacity"
+                v-model="capacity"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="province">Province </label>
+              <input
+                type="text"
+                id="province"
+                v-model="province"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="regnumber">Registration Number </label>
+              <input
+                type="text"
+                id="regnumber"
+                v-model="regnumber"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="description">Description </label>
               <input
                 type="text"
                 id="description"
@@ -62,6 +98,7 @@
                 required
               />
             </div>
+
             <div class="form-actions">
               <q-btn class="q-mr-md-d" type="submit" label="CREATE ACCOUNT" />
             </div>
@@ -225,6 +262,7 @@
     background-color: #284b36;
     display: flex;
     flex-direction: column;
+    height: 1300px;
   }
   
   .top-panel {
