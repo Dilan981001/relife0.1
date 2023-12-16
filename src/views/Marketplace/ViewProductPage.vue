@@ -68,24 +68,38 @@ export default{
   //       } ;
   //    this.$store.dispatch('cartModule/setCart',product)
   // }
-  addToCart(){
-      axios.post(`https://limitless-lake-55070.herokuapp.com/cart/add?token=${this.token}`,{
-        productId:this.productId,
+  addToCart(id){
+      // const product = {
+      //   id: id,
+      //   quantity:this.quantity
+      // };
+      if (!this.token) {
+        // user is not logged in
+        // show some error
+        Swal.fire({
+          text: "please login to add item in cart",
+          icon: "error",
+        });
+        return;
+      }
+      axios.post(`http://localhost:8081/cart/add?token=${this.token}`,{
+        productId:id,
         quantity:this.quantity,
-
       })
       .then(res=>{
         if(res.status==201){
+        
           Swal.fire({
             text:"product has added in cart",
             icon:'success'
           })
+          this.$store.dispatch("cartModule/getCartItems",this.token);
         }
-        this.$store.dispatch("cartModule/getCartItems",this.token);
       }).catch(err=>{
         console.log(err);
       })
-  }
+      
+  },
     },
     
     mounted(){
