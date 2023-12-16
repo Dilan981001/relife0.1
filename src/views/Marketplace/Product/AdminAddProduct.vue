@@ -44,13 +44,14 @@
         </div>
       </q-form>
     </div>
-    {{ categoryState.categories }}
+
   </div>
 </template>
 
 <script>
 import axios from "axios";
 import { mapGetters } from "vuex";
+import Swal from 'sweetalert2';
 export default {
     data(){
         return {
@@ -73,8 +74,15 @@ export default {
         }
 
         axios.post('http://localhost:8081/product/add',newProduct)
-        .then(
-            this.$router.push({name:'AdminProduct'})
+        .then(()=>{
+          this.$router.push({name:'AdminProduct'});
+          Swal.fire({
+          text:"Product added ",
+          icon:"success",
+         })
+        }
+      
+            
         )
         .catch(error=>{
             console.log(error);

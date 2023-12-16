@@ -18,8 +18,10 @@ export default {
         state.description=val;
     },
     GET_CATEGORY_SUCCESS : function (state,payload){
-        state.categoriesList.categories =payload.categories
-      //  console.log(state.productsList.products);
+        
+        state.categoriesList.categories =payload.categories;
+       // console.log( state.categoriesList.categories);
+     
        
     }},
     actions:{

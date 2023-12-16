@@ -51,6 +51,6 @@ export default {
      // eslint-disable-next-line vue/no-unused-components
 
 
-  }
+  },
 }
 </script>

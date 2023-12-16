@@ -69,7 +69,16 @@ export default {
       //   id: id,
       //   quantity:this.quantity
       // };
-      axios.post(`https://limitless-lake-55070.herokuapp.com/cart/add?token=${this.token}`,{
+      if (!this.token) {
+        // user is not logged in
+        // show some error
+        Swal.fire({
+          text: "please login to add item in cart",
+          icon: "error",
+        });
+        return;
+      }
+      axios.post(`http://localhost:8081/cart/add?token=${this.token}`,{
         productId:id,
         quantity:this.quantity,
       })

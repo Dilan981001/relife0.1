@@ -1,6 +1,6 @@
 <template>
   <div class="column items-center justify-center q-mt-lg">
-    Add Caregory
+    Add Category
     <div class="q-pa-md bg-red q-mt-lg" style="max-width: 400px">
       <q-form class="q-gutter-md" @submit="addCategory()">
         <q-input
@@ -71,24 +71,7 @@ methods:{
     
   }
 }
-//   computed: {
-//   categoryName: {
-//     get(){
-//       return this.$store.state.categoryState.name
-//     },
-//     set (value) {
-//       this.$store.commit('categoryModule/SET_CATEGORY_NAME', value)
-//     }
-//   },
-//   categoryDescription: {
-//     get(){
-//       return this.$store.state.categoryState.description
-//     },
-//     set (value) {
-//       this.$store.commit('categoryModule/SET_CATEGORY_DESCRIPTION', value)
-//     }
-//   },
-// }
+
 
 }
 </script>

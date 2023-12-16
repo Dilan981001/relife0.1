@@ -54,7 +54,7 @@
 </template>
 
 <script>
-      
+      import Swal from 'sweetalert2';
        import axios from 'axios';
        
     
@@ -88,17 +88,25 @@ axios.post("http://localhost:8081/user/login", dataToSend)
         .then(response => {
           const status = response.data.status;
           // const msg= response.data.message;
-          alert(status);
+        //  alert(status);
           if (status === false) {
-            alert("Incorrect Email and Password not match");
+            Swal.fire({
+          text:"Incorrect Email and Password not match",
+          icon:"error",
+         })
+           // alert("Incorrect Email and Password not match");
           } else {
-            alert("Login Success");
+            Swal.fire({
+          text:"Login Success",
+          icon:"success",
+         })
             this.$router.push('/fulldashboard');
+            localStorage.setItem("token",response.data.token);
           }
         })
         .catch(error => {
           console.error(error);
-          alert(error);
+          //alert(error);
         });
               },
     submitForm() {

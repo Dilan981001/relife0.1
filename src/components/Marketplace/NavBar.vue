@@ -54,7 +54,7 @@
           color="white"
           text-color="black"
           label="Log out"
-          to="/login"
+          to="/signin"
           size="70%"
           class="text-weight-bold q-ml-md"
         />

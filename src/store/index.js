@@ -1,7 +1,7 @@
 import {
     createStore
 } from "vuex"
-import categoryModule from "./modules/category.module"
+import categoryModule from "@/store/modules/category.module"
 import productModule from "@/store/modules/products.module"
 import cartModule from "./modules/cart.module"
 
@@ -53,7 +53,8 @@ export default createStore({
             return state.categoryState.description
         },
         getCategoryState:(state)=>{
-            return state.categoryState.categoriesList.categories
+       
+            return state.categoryState.categoriesList.categories;
         }
 
     }

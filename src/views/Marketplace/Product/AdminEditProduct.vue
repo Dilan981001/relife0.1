@@ -51,6 +51,7 @@
   <script>
   
   import axios from 'axios';
+  import Swal from 'sweetalert2';
 import { mapGetters } from 'vuex';
   export default {
       data(){
@@ -61,9 +62,14 @@ import { mapGetters } from 'vuex';
       },
     methods:{
      async editProduct(){
-         await axios.post(`https://limitless-lake-55070.herokuapp.com/product/update/${this.id}`,this.product)
-         .then(
-            this.$router.push({name:'AdminProduct'})
+         await axios.post(`http://localhost:8081/product/update/${this.id}`,this.product)
+         .then(()=>{
+            this.$router.push({name:'AdminProduct'}) 
+            Swal.fire({
+          text:"Producted Edited successfully",
+          icon:"success",
+         })
+          }
         )
         .catch(error=>{
             console.log(error);

@@ -20,6 +20,7 @@ import CartPage from '@/views/Marketplace/CartPage.vue';
 // import SignUp from '@/components/Marketplace/SignUp.vue';
 // import LogIn from '@/components/Marketplace/LogIn.vue';
 import AddCategory from '@/views/Marketplace/Category/AddCategory.vue';
+import EditCategory from '@/views/Marketplace/Category/EditCategory.vue';
 import AdminProductPage from '@/views/Marketplace/Product/AdminProductPage.vue';
 import AdminAddProduct from '@/views/Marketplace/Product/AdminAddProduct.vue';
 import AdminEditProduct from '@/views/Marketplace/Product/AdminEditProduct.vue';
@@ -115,6 +116,11 @@ const routes = [
     path: '/admin/category/add',
     name: 'AddCategory',
     component: AddCategory
+  },
+  {
+    path: '/admin/category/:id',
+    name: 'EditCategory',
+    component: EditCategory
   },
   {
     path: '/admin/category',

@@ -34,7 +34,7 @@
       <q-list>
         <q-item clickable :active="link=== 'home'" @click="link='home'" active-class="">
           <q-item-section avatar class="flex flex-center column">
-            <q-btn to="/rightsidebar">
+            <q-btn to="/marketplace">
             <font-awesome-icon :icon="['fas', 'fa-user-plus']" :size="{ width: '70%', height: '70%' }" style="color: floralwhite; width: 70%; height: 70%;" />
             </q-btn>
           </q-item-section>

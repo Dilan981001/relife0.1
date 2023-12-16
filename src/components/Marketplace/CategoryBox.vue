@@ -7,27 +7,18 @@
       <q-img
         :src="category.imageUrl"
         style="height: 200px; width: 200px"
-        @click="ClickProduct(product.id)"
+       
       />
       <div class="product-details text-center">
         <p class="text-weight-bold text-black text-center">{{ category.categoryName }}</p>
         <p style="color: black">RS {{category.description }}</p>
-        
-     
-        <q-btn
-        v-if="$route.name === 'AddCategory'"
-          color="primary"
-          icon="add_circle"
-          label="Edit"
-          @click="EditProduct(product.id)"
-        />
       
         <q-btn
         v-if="$route.name === 'CategoryPage'"
               color="primary"
               icon="add_circle"
-              label="ADD TO CART"
-              @click="addToCart(product.id)"
+              label="Edit"
+             :to="{name:'EditCategory',params:{id:category.id}}"
             />
      
     
@@ -51,7 +42,7 @@
             await axios.get(`http://localhost:8081/category/list`)
             .then(res=>{
                 this.categories=res.data;
-                console.log(res.data);
+            
             })
             .catch(err=>{
                 console.log(err);

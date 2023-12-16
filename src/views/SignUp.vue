@@ -92,7 +92,7 @@
 
 <script>
 import axios from "axios";
-
+import Swal from 'sweetalert2';
 export default {
   data() {
     return {
@@ -120,16 +120,27 @@ export default {
         .post("http://localhost:8081/user/save", dataToSend)
         .then((response) => {
           if (!response.data.success) {
-            alert("User Registration Successful");
+            Swal.fire({
+          text:"User Registration Successfully",
+          icon:"success",
+         })
             this.$router.push("/signin");
           } else {
-            console.log(response.data.error);
-            alert("Failed to register user: " + response.data.message);
+            // console.log(response.data.error);
+            // alert("Failed to register user: " + response.data.message);
+            Swal.fire({
+          text:"Failed to register user",
+          icon:"error",
+         })
           }
         })
         .catch((error) => {
-          console.error(error);
-          alert("An error occurred while registering user");
+           console.error(error);
+          // alert("An error occurred while registering user");
+          Swal.fire({
+          text:"An error occurred while registering user",
+          icon:"error",
+         })
         });
     },
     submitForm() {
