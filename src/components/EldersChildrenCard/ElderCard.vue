@@ -449,6 +449,8 @@ h2 {
   @media (max-width: 768px) {
     width: 100%;
   }
+  margin-right: 65px;
+  margin-top: 40px;
 }
 .card-text {
   margin-top: -30px;

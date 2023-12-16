@@ -127,7 +127,7 @@ export default {
 }
 
 .filter2 {
-  padding-right: 900px;
+
   justify-content: flex;
 }
 .filter-container {
