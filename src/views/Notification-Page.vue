@@ -1,9 +1,8 @@
 <template>
-
   <div class="background">
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
     />
 
     <div>
@@ -12,13 +11,13 @@
 
     <div class="box2"></div>
 
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
 
     <div class="two-column-layout">
       <div class="column-left">
-
         <div class="search-bar">
           <!-- Placeholder for the search bar -->
           <div class="search-input">
@@ -30,7 +29,8 @@
           <div class="filter">
             <div class="filter-icon">
               <button @click="toggleDropdown">
-                <i class="bi bi-funnel"></i> {{ showDropdown ? 'Close Filter' : 'Filter City' }}
+                <i class="bi bi-funnel"></i>
+                {{ showDropdown ? "Close Filter" : "Filter City" }}
               </button>
               <div class="city-dropdown" v-show="showDropdown">
                 <!-- Add your city names here as dropdown items -->
@@ -47,15 +47,16 @@
           <div class="filter2">
             <div class="filter-icon">
               <button @click="toggleDropdown">
-                <i class="bi bi-funnel"></i> {{ showDropdown ? 'Close Filter' : 'Filter Age' }}
+                <i class="bi bi-funnel"></i>
+                {{ showDropdown ? "Close Filter" : "Filter Age" }}
               </button>
               <div class="city-dropdown" v-show="showDropdown">
                 <!-- Add your city names here as dropdown items -->
-                <div class="city-item">0 - 1 </div>
+                <div class="city-item">0 - 1</div>
                 <div class="city-item">1 - 5</div>
-                <div class="city-item">5 - 15 </div>
+                <div class="city-item">5 - 15</div>
                 <div class="city-item">15 - 30</div>
-                <div class="city-item">30 - 50 </div>
+                <div class="city-item">30 - 50</div>
                 <div class="city-item">50 to up</div>
                 <!-- Add more city items as needed -->
               </div>
@@ -64,200 +65,111 @@
           <div class="filter3">
             <div class="filter-icon">
               <button @click="toggleDropdown">
-                <i class="bi bi-funnel"></i> {{ showDropdown ? 'Close Filter' : 'Filter Category' }}
+                <i class="bi bi-funnel"></i>
+                {{ showDropdown ? "Close Filter" : "Filter Category" }}
               </button>
               <div class="city-dropdown" v-show="showDropdown">
                 <!-- Add your city names here as dropdown items -->
                 <div class="city-item">Elders home</div>
                 <div class="city-item">Childrens home</div>
 
-
                 <!-- Add more city items as needed -->
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <div class="column-right">
-        <div class="card">
-          <div class="shadow shadow-offset-left-xs">
-            <div class="card-main-body">
-              <div class="card-body">
-                <div class="column-left-1"> <h5 class="card-title">Thudawa girls ...</h5>
 
-                  <h6>Wadduwa</h6>
-                  <p class="card-text">
-                    “Tudawe” Home is incharge of a committee of All Ceylon
-                    Buddhist Congress. We support them by providing the needs of
-                    the childrend
-                  </p>
-                </div>
+    <q-card class="my-card" flat bordered>
+      <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" />
 
-                <div class="column-middle-1">
-                  <q-btn type="button" href="#" class="rec4">
-                    More Details..
-                  </q-btn>
+      <q-card-section>
+        <q-btn
+          fab
+          color="primary"
+          icon="place"
+          class="absolute"
+          style="top: 0; right: 12px; transform: translateY(-50%);"
+        />
 
-                </div>
-                <div class="column-right-1">  <img src="h4.jpg" class="card-img-top" alt="Skyscrapers" /></div>
-
-              </div>
-            </div>
+        <div class="row no-wrap items-center">
+          <div class="col text-h6 ellipsis">
+            Cafe Basilico
+          </div>
+          <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">
+            <q-icon name="place" />
+            250 ft
           </div>
         </div>
 
-        <div class="card">
-          <div class="shadow shadow-offset-left-xs">
-            <div class="card-main-body">
-              <div class="card-body">
-                <div class="column-left-1"> <h5 class="card-title">Thudawa girls ...</h5>
+        <q-rating v-model="stars" :max="5" size="32px" />
+      </q-card-section>
 
-                  <h6>Wadduwa</h6>
-                  <p class="card-text">
-                    “Tudawe” Home is incharge of a committee of All Ceylon
-                    Buddhist Congress. We support them by providing the needs of
-                    the childrend
-                  </p>
-                </div>
-
-                <div class="column-middle-1">
-                  <q-btn type="button" href="#" class="rec4">
-                    More Details..
-                  </q-btn>
-                </div>
-                <div class="column-right-1">  <img src="h4.jpg" class="card-img-top" alt="Skyscrapers" /></div>
-
-              </div>
-            </div>
-          </div>
+      <q-card-section class="q-pt-none">
+        <div class="text-subtitle1">
+          $・Italian, Cafe
         </div>
-
-        <div class="card">
-          <div class="shadow shadow-offset-left-xs">
-            <div class="card-main-body">
-              <div class="card-body">
-                <div class="column-left-1"> <h5 class="card-title">Thudawa girls ...</h5>
-
-                  <h6>Wadduwa</h6>
-                  <p class="card-text">
-                    “Tudawe” Home is incharge of a committee of All Ceylon
-                    Buddhist Congress. We support them by providing the needs of
-                    the childrend
-                  </p>
-                </div>
-
-                <div class="column-middle-1">
-                  <q-btn type="button" href="#" class="rec4">
-                    More Details..
-                  </q-btn>
-                </div>
-                <div class="column-right-1">  <img src="h4.jpg" class="card-img-top" alt="Skyscrapers" /></div>
-
-              </div>
-            </div>
-          </div>
+        <div class="text-caption text-grey">
+          Small plates, salads & sandwiches in an intimate setting.
         </div>
-        <slot name="right"></slot>
+      </q-card-section>
+
+      <q-separator />
+
+      <q-card-actions>
+        <q-btn flat round icon="event" />
+        <q-btn flat color="primary">
+          Reserve
+        </q-btn>
+      </q-card-actions>
+    </q-card>
+
       </div>
     </div>
 
-
-
-
-
-
     <div>
-      <page-footer/>
+      <page-footer />
     </div>
-
   </div>
-
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue';
-import PageFooter from '@/components/PageFooter.vue';
+import { ref } from 'vue'
+import NavBar from "@/components/NavBar.vue";
+import PageFooter from "@/components/PageFooter.vue";
 export default {
 
-  data() {
+    setup () {
     return {
-      abandonedPeoplePosts: [
-        // Mock data for abandoned people's posts
-        {
-          id: 1,
-          title: 'Post 1',
-          description: 'This is the description of Post 1.',
-          location: 'Location 1',
-          contact: 'Contact 1',
-        },
-        {
-          id: 2,
-          title: 'Post 2',
-          description: 'This is the description of Post 2.',
-          location: 'Location 2',
-          contact: 'Contact 2',
-        },
-      ],
-      childrenHomePosts: [
-        // Mock data for children home requirements posts
-        {
-          id: 1,
-          title: 'Post 1',
-          description: 'This is the description of Post 1.',
-          location: 'Location 1',
-          contact: 'Contact 1',
-        },
-      ],
-      elderHomePosts: [
-        // Mock data for elder homes requirements posts
-        {
-          id: 1,
-          title: 'Post 1',
-          description: 'This is the description of Post 1.',
-          location: 'Location 1',
-          contact: 'Contact 1',
-        },
-        {
-          id: 2,
-          title: 'Post 2',
-          description: 'This is the description of Post 2.',
-          location: 'Location 2',
-          contact: 'Contact 2',
-        },
-      ],
-      loadingPosts: false,
-      loadingChildrenHomePosts: false,
-      loadingElderHomePosts: false,
-    };
+      stars: ref(4)
+    }
   },
-  components:{
+
+  components: {
     NavBar,
-    PageFooter
-  }
+    PageFooter,
+  },
 };
-
-
-
-
-
 </script>
 
 <style scoped>
 
-
+.my-card{
+  width: 100%;
+  max-width: 300px;
+}
 .filter {
   flex: 1;
   margin-top: 50px;
-
 }
 
-.filter2{
+.filter2 {
   padding-right: 0px;
   justify-content: flex;
   margin-top: 50px;
 }
-.filter3{
+.filter3 {
   padding-right: 0px;
   justify-content: flex;
   margin-top: 50px;
@@ -271,14 +183,16 @@ export default {
 
 /* Filter icon and button styles */
 /* Filter icon and button styles */
-.filter-icon, .filter2-icon {
+.filter-icon,
+.filter2-icon {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.filter-icon button, .filter2-icon button {
-  background-color: #284B3600;
+.filter-icon button,
+.filter2-icon button {
+  background-color: #284b3600;
   color: white;
   border: none;
   padding: 10px;
@@ -287,12 +201,14 @@ export default {
   margin-left: 10px; /* Adjust the spacing as needed */
 }
 
-.filter-icon i, .filter2-icon i {
+.filter-icon i,
+.filter2-icon i {
   margin-right: 5px;
 }
 
 /* Dropdown styles */
-.city-dropdown, .age-dropdown {
+.city-dropdown,
+.age-dropdown {
   position: absolute;
   top: 100%; /* Place it below the filter icon */
   left: 0;
@@ -302,7 +218,8 @@ export default {
   display: none;
 }
 
-.city-item, .age-item {
+.city-item,
+.age-item {
   padding: 5px 10px;
   cursor: pointer;
 }
@@ -337,7 +254,7 @@ export default {
 }
 
 input[type="text"] {
-  border: 2px solid #FFFFFF; /* Change the border style and color here */
+  border: 2px solid #ffffff; /* Change the border style and color here */
   outline: none;
   flex: 1;
   padding: 10px;
@@ -347,7 +264,7 @@ input[type="text"] {
 
 button {
   border: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: rgb(68, 68, 68);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -360,12 +277,9 @@ button {
   background-color: #284b36;
   position: relative;
   /* Ensure relative positioning */
-  background-image: url('/public/Vector 40.png'),
-  url('/public/Vector 7.png'),
-  url('/public/Vector 8.png'),
-  url('/public/Vector 14.png'),
-  url('/public/Vector 19.png'),
-  url('/public/Vector 18.png');
+  background-image: url("/public/Vector 40.png"), url("/public/Vector 7.png"),
+    url("/public/Vector 8.png"), url("/public/Vector 14.png"),
+    url("/public/Vector 19.png"), url("/public/Vector 18.png");
   /* Set the path to your background image */
   background-repeat: no-repeat;
   /* Prevent the background image from repeating */
@@ -380,7 +294,6 @@ button {
   padding: 20px;
   background-color: #284b36;
   color: white;
-
 }
 
 .column-right {
@@ -396,35 +309,40 @@ button {
   width: 90%;
   height: 90%;
 
-@media (max-width: 768px) {
-  width: 100%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
-}
-.card-main-body{
+.card-main-body {
   margin-top: -40px;
 }
-.card-body{
+.card-body {
   display: flex;
   flex-direction: row;
 }
 .card {
   height: 250px;
   width: 90%;
-  background: radial-gradient(ellipse at center, #ffffff3d,#346045, rgb(17, 35, 24));
+  background: radial-gradient(
+    ellipse at center,
+    #ffffff3d,
+    #346045,
+    rgb(17, 35, 24)
+  );
   border-radius: 30px 30px 30px 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   display: grid;
   margin-bottom: 10px;
   margin-top: 10px;
-@media (max-width: 768px) {
-  width: 100%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
-}
-.card-text{
+.card-text {
   margin-top: -30px;
 }
-.shadow{
+.shadow {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -439,7 +357,6 @@ button {
   padding: 20px;
   color: white;
   margin-top: 25px;
-
 }
 .column-middle-1 {
   flex: 2;
@@ -448,11 +365,6 @@ button {
   margin-top: 140px;
 }
 
-
-
-
-
-
 .box2 {
   margin-bottom: 30px;
   /* Adds margin space at the bottom of the box */
@@ -460,14 +372,8 @@ button {
   /* Adds padding space inside the box */
 }
 
-
-
-
-
-
 .notification-page {
-  background-color:  #284b36;
-
+  background-color: #284b36;
 }
 
 .post-item {
@@ -478,12 +384,10 @@ button {
   margin-right: 100px;
   margin-left: 25px;
   background-color: #ffffff;
-
 }
 .box2 {
   margin-bottom: 50px; /* Adds margin space at the bottom of the box */
   padding: 20px; /* Adds padding space inside the box */
-
 }
 .box1 {
   /* Adds margin space at the bottom of the box */
@@ -515,7 +419,9 @@ button {
 
 h2 {
   margin-top: 20px;
-  font-size: 40px;margin-left: 30px;  color: white;
+  font-size: 40px;
+  margin-left: 30px;
+  color: white;
   font-weight: lighter;
   text-align: justify;
 }

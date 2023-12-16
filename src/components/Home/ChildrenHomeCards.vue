@@ -41,6 +41,8 @@
         </div>
   
         <br /><br />
+
+        
         <div class="card-container">
           <div class="col">
             <div class="card">
@@ -159,6 +161,7 @@
 </template>
 
 <style scoped>
+
 .background {
   background-color: #ffffff;
   position: relative; /* Ensure relative positioning */
@@ -209,6 +212,7 @@ font-size: 20px;
 .col {
   padding-left: 100px;
   padding-right: 50px;
+  
 }
 .row{
   margin-right: 100px;

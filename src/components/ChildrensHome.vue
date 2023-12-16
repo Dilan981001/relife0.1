@@ -1,9 +1,8 @@
-
 <template>
   <div class="background">
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
     />
 
     <div>
@@ -21,40 +20,61 @@
 
       <!-- Filter icon and dropdown -->
       <div class="filter">
-        <div class="filter-icon">
-          <button @click="toggleDropdown">
-            <i class="bi bi-funnel"></i> {{ showDropdown ? 'Close Filter' : 'Filter City' }}
-          </button>
-          <div class="city-dropdown" v-show="showDropdown">
-            <!-- Add your city names here as dropdown items -->
-            <div class="city-item">Anuradhapura</div>
-            <div class="city-item">Colombo</div>
-            <div class="city-item">Hputhale</div>
-            <div class="city-item">Mannaram</div>
-            <div class="city-item">Sigiriya</div>
-            <div class="city-item">Trinco</div>
-            <!-- Add more city items as needed -->
-          </div>
+        <div class="q-pa-md">
+          <q-btn-dropdown outline style="color: white" label="Filter by Age">
+            <q-list>
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>01-10</q-item-label>
+                </q-item-section>
+              </q-item>
+
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>10-18</q-item-label>
+                </q-item-section>
+              </q-item>
+
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>18-25</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
         </div>
       </div>
       <div class="filter2">
-        <div class="filter-icon">
-          <button @click="toggleDropdown">
-            <i class="bi bi-funnel"></i> {{ showDropdown ? 'Close Filter' : 'Filter Age' }}
-          </button>
-          <div class="city-dropdown" v-show="showDropdown">
-            <!-- Add your city names here as dropdown items -->
-            <div class="city-item">Anuradhapura</div>
-            <div class="city-item">Colombo</div>
-            <div class="city-item">Hputhale</div>
-            <div class="city-item">Mannaram</div>
-            <div class="city-item">Sigiriya</div>
-            <div class="city-item">Trinco</div>
-            <!-- Add more city items as needed -->
-          </div>
+        <div class="q-pa-md">
+          <q-btn-dropdown outline style="color: white" label="Filter by City">
+            <q-list>
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>Anuradhapura</q-item-label>
+                </q-item-section>
+              </q-item>
+
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>Jaffna</q-item-label>
+                </q-item-section>
+              </q-item>
+
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>Colombo</q-item-label>
+                </q-item-section>
+              </q-item>
+
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>Galle</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
         </div>
       </div>
-
     </div>
 
     <div>
@@ -63,7 +83,6 @@
           <div class="left col-8">
             <div><elder-card /></div>
           </div>
-
         </div>
       </div>
       <Footer />
@@ -74,7 +93,7 @@
 <script>
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/PageFooter.vue";
-import ElderCard from './EldersChildrenCard/ElderCard.vue';
+import ElderCard from "./EldersChildrenCard/ElderCard.vue";
 
 export default {
   components: {
@@ -100,13 +119,12 @@ export default {
 </script>
 
 <style scoped>
-
 .filter {
   flex: 1;
   margin-right: 10px; /* Adjust the spacing as needed */
 }
 
-.filter2{
+.filter2 {
   padding-right: 900px;
   justify-content: flex;
 }
@@ -119,14 +137,16 @@ export default {
 
 /* Filter icon and button styles */
 /* Filter icon and button styles */
-.filter-icon, .filter2-icon {
+.filter-icon,
+.filter2-icon {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.filter-icon button, .filter2-icon button {
-  background-color: #284B3600;
+.filter-icon button,
+.filter2-icon button {
+  background-color: #284b3600;
   color: white;
   border: none;
   padding: 10px;
@@ -135,12 +155,14 @@ export default {
   margin-left: 10px; /* Adjust the spacing as needed */
 }
 
-.filter-icon i, .filter2-icon i {
+.filter-icon i,
+.filter2-icon i {
   margin-right: 5px;
 }
 
 /* Dropdown styles */
-.city-dropdown, .age-dropdown {
+.city-dropdown,
+.age-dropdown {
   position: absolute;
   top: 100%; /* Place it below the filter icon */
   left: 0;
@@ -150,7 +172,8 @@ export default {
   display: none;
 }
 
-.city-item, .age-item {
+.city-item,
+.age-item {
   padding: 5px 10px;
   cursor: pointer;
 }
@@ -185,7 +208,7 @@ export default {
 }
 
 input[type="text"] {
-  border: 2px solid #FFFFFF; /* Change the border style and color here */
+  border: 2px solid #ffffff; /* Change the border style and color here */
   outline: none;
   flex: 1;
   padding: 10px;
@@ -195,7 +218,7 @@ input[type="text"] {
 
 button {
   border: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: rgb(68, 68, 68);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -208,12 +231,9 @@ button {
   background-color: #284b36;
   position: relative;
   /* Ensure relative positioning */
-  background-image: url('/public/Vector 40.png'),
-  url('/public/Vector 7.png'),
-  url('/public/Vector 8.png'),
-  url('/public/Vector 14.png'),
-  url('/public/Vector 19.png'),
-  url('/public/Vector 18.png');
+  background-image: url("/public/Vector 40.png"), url("/public/Vector 7.png"),
+    url("/public/Vector 8.png"), url("/public/Vector 14.png"),
+    url("/public/Vector 19.png"), url("/public/Vector 18.png");
   /* Set the path to your background image */
   background-repeat: no-repeat;
   /* Prevent the background image from repeating */
@@ -228,6 +248,9 @@ button {
 
 .full {
   display: flex;
+  justify-content: center;
+  margin-top: -150px;
+  padding: 50px;
 }
 
 .left {
