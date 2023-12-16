@@ -5,19 +5,24 @@
         <div class="login-label">
           <span class="label-text">RELIFE</span>
         </div>
-        
-      <form @submit.prevent="LoginData" method="post">
+
+        <div class=" row1 form-actions">
+      <q-btn class="q-mr-md-d" type="submit" label="Sign in as Finder " />
+      <q-btn class="q-mr-md-d" to="/signinprovider" label="Sign in as Provider " />
+    </div>
+
+       <form @submit.prevent="LoginData" method="post">
     <div class="form-group">
-      <label for="email">Email</label>
+      <label for="email" >Finder Email</label>
       <input type="email" id="email" v-model="user.email" required/>
     </div>
     <div class="form-group">
-      <label for="password">Password</label>
+      <label for="password">Finder Password</label>
       <input type="password" id="password" v-model="user.password"  required/>
     </div>
     <div class="form-actions">
-      <q-btn class="q-mr-md-d" type="submit" label="Sign In" />
-      <q-btn class="q-mr-md-d" to="/signup" label="Sign Up" />
+     <q-btn class="q-mr-md-d" type="submit" label="Sign In" />
+     <q-btn class="q-mr-md-d" to="/signup" label="Sign in as provider" />
     </div>
   </form>
       </div>
@@ -264,5 +269,8 @@ axios.post("http://localhost:8081/user/login", dataToSend)
     background-color: #ffffff;
     margin: 4px 0;
   }
+}
+.row1{
+  background: green;
 }
 </style>

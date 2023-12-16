@@ -19,6 +19,7 @@ import EldersHome from "@/components/EldersHome.vue"
 import EldersCard from "@/components/Home/EldersCard.vue"
 import DonateFund from "@/components/DonateFund.vue"
 import PaymentSecure from "@/components/PaymentSecure.vue"
+import Signinprovider from "@/views/Marketplace/signinprovider.vue"
 
 export default {
   name: 'App',
@@ -49,6 +50,7 @@ export default {
      // eslint-disable-next-line vue/no-unused-components
      PaymentSecure,
      // eslint-disable-next-line vue/no-unused-components
+     Signinprovider,
 
 
   }

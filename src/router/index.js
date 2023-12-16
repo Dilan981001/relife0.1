@@ -25,6 +25,7 @@ import AdminAddProduct from '@/views/Marketplace/Product/AdminAddProduct.vue';
 import AdminEditProduct from '@/views/Marketplace/Product/AdminEditProduct.vue';
 import CategoryPage from '@/views/Marketplace/Category/CategoryPage.vue';
 import AdminPage from '@/views/Marketplace/AdminPage.vue';
+import Signinprovider from "@/views/Marketplace/signinprovider.vue"
 
 const routes = [
   {
@@ -136,6 +137,12 @@ const routes = [
     name: 'AdminEditProduct',
     component: AdminEditProduct
   },
+  {
+    path: '/signinprovider',
+    name: 'Signinprovider ',
+    component: Signinprovider 
+  },
+
 
  
 
