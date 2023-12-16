@@ -79,7 +79,7 @@ export default{
         return;
       }
 
-      axios.post(`https://limitless-lake-55070.herokuapp.com/cart/add?token=${this.token}`,{
+      axios.post(`http://localhost:8081/cart/add?token=${this.token}`,{
         productId:this.productId,
         quantity:this.quantity,
 
