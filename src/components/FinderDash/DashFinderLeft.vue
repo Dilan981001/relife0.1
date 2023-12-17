@@ -69,7 +69,7 @@
             </div>
             <div class="col-6">
                 <q-card class="q-mx-md q-pa-md" bordered>
-                    <div class="text-overline">Statistic</div>
+                    <div class="text-overline">Post creation</div>
                     <div class="row">
                         <div class="col-6">
                             <q-img src="post.png" class="my-card " style="max-width: 200px; height: 150px; border-radius:2px;"  />
