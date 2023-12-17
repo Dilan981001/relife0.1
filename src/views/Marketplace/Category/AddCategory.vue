@@ -63,6 +63,7 @@ methods:{
           text:"Category added successfully",
           icon:"success",
          })
+         this.$router.push({ name: "CategoryPage" });
        
         })
         .catch((err) => {
@@ -71,24 +72,7 @@ methods:{
     
   }
 }
-//   computed: {
-//   categoryName: {
-//     get(){
-//       return this.$store.state.categoryState.name
-//     },
-//     set (value) {
-//       this.$store.commit('categoryModule/SET_CATEGORY_NAME', value)
-//     }
-//   },
-//   categoryDescription: {
-//     get(){
-//       return this.$store.state.categoryState.description
-//     },
-//     set (value) {
-//       this.$store.commit('categoryModule/SET_CATEGORY_DESCRIPTION', value)
-//     }
-//   },
-// }
+
 
 }
 </script>
