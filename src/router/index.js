@@ -27,7 +27,6 @@ import CategoryPage from '@/views/Marketplace/Category/CategoryPage.vue';
 import AdminPage from '@/views/Marketplace/AdminPage.vue';
 import Signinprovider from "@/views/Marketplace/signinprovider.vue";
 import FinderDashf from "@/views/FinderDashf.vue";
-import Signinprovider from "@/views/Marketplace/signinprovider.vue"
 import SignProvider from "@/views/Marketplace/SignProvider"
 
 
