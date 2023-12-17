@@ -49,7 +49,7 @@
         <q-card-section class="row justify-evenly">
           <div class="text-h6">Total Quantity : {{ totalQuantity }}</div>
           <div class="text-h6">Grand Total : Rs {{ totalcost }}</div>
-          <q-btn class="q-mb-lg" label="Confirm Order" dense color="blue" />
+          <q-btn class="q-mb-lg" label="Confirm Order" dense color="blue" to="/order" />
         </q-card-section>
       </q-card>
     </div>
