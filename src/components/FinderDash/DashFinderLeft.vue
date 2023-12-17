@@ -72,7 +72,7 @@
                     <div class="text-overline">Statistic</div>
                     <div class="row">
                         <div class="col-6">
-                            <q-img src="https://img.freepik.com/free-photo/blue-navigation-location-gps-button-icon-arrow-direction-sign-white-background-3d-rendering_56104-1158.jpg?size=626&ext=jpg&ga=GA1.2.1250738934.1702343817&semt=ais" class="my-card " style="max-width: 200px; height: 150px; border-radius:2px;"  />
+                            <q-img src="post.png" class="my-card " style="max-width: 200px; height: 150px; border-radius:2px;"  />
                         </div>
                         <div class="col-6">
                             <div class="my-card-right">

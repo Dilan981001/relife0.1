@@ -22,6 +22,7 @@ import DonateFund from "@/components/DonateFund.vue"
 import PaymentSecure from "@/components/PaymentSecure.vue"
 import Signinprovider from "@/views/Marketplace/signinprovider.vue"
 import SignProvider from "@/views/Marketplace/SignProvider"
+import FormPosts from "@/views/FormPosts"
 
 
 export default {
@@ -59,6 +60,8 @@ export default {
      
      // eslint-disable-next-line vue/no-unused-components
      FinderDashf,
+     // eslint-disable-next-line vue/no-unused-components
+     FormPosts,
 
 
   }

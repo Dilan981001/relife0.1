@@ -27,6 +27,7 @@ import CategoryPage from '@/views/Marketplace/Category/CategoryPage.vue';
 import AdminPage from '@/views/Marketplace/AdminPage.vue';
 import Signinprovider from "@/views/Marketplace/signinprovider.vue";
 import FinderDashf from "@/views/FinderDashf.vue";
+import FormPosts from "@/views/FormPosts"
 import SignProvider from "@/views/Marketplace/SignProvider"
 
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/signin',
     name: 'SigninSignup',
     component: SigninSignup
+  },
+  {
+    path: '/formposts',
+    name: 'FormPosts',
+    component: FormPosts
   },
   {
     path: '/signup',
