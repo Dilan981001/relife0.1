@@ -1,4 +1,9 @@
 <template>
+
+<div class="row">
+ <NavBar/>
+</div>
+
   <div class="q-pa-md row justify-center item-center">
     <div class="col-lg-12 col-md-12 col-sm-12">
       <q-table
@@ -59,7 +64,14 @@
 
 <script>
 import axios from 'axios';
-export default{
+  import NavBar from "@/components/Marketplace/NavBar.vue";
+
+export default {
+
+      components: {
+        NavBar,
+    },
+
   data(){
     return{
       cartItems:[],

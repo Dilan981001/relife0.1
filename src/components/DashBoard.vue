@@ -71,9 +71,10 @@
         </q-card>
       </div>
       <div class="col-6">
-        <q-card class="q-mx-md q-pa-md " bordered>
+      <div class="col-3">
+        <q-card class="q-mx-md q-pa-md " style="width: 300px;" bordered>
           <div class="text-overline">Statistic</div>
-          <div class="">
+          <div >
             <q-carousel
                 v-model="slide"
                 key="carousel"
@@ -114,7 +115,28 @@
             </q-carousel>
           </div>
         </q-card>
+        <div class="col-3 q-col-gutter-md top" style="width:220px; max-height:100px;  margin-left:320px;">
+       
+          <q-card class="q-mx-md q-pa-md q-mt-sm" style="margin-top:-230px; height:230px;" bordered>
+            <div class="text-overline">Marketplace</div>
+
+            <div class="q-ma-md q-gutter-sm full-width">
+              <q-btn color="green"  label="Admin Page" to="/admin" />
+            </div>
+
+            <div class="q-pa-sm q-gutter-sm">
+              <q-btn color="green"  label="Add category" to="/admin/category" />
+            </div>
+
+          </q-card>
+       
+       </div>
+        </div>
+        
+
       </div>
+
+
     </div>
     <!--cuted here-->
     <q-toolbar>
