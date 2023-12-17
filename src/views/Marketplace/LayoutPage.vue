@@ -8,11 +8,11 @@
   
 <script>
 
-import NavBar from './../../components/Marketplace/NavBar.vue';
+import NavBar from "@/components/Marketplace/NavBar.vue";
 export default {
 name: 'LayoutPage',
 components:{
-    NavBar
+    NavBar,
 },
 }
 </script>
