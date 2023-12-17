@@ -9,13 +9,13 @@
 
       <q-card class="q-mx-md q-pa-md" bordered>
         <div class="q-pa-md q-mx-md">
-        <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
+        <q-form @submi.prevent="addPosts()" @reset="onReset" class="q-gutter-md">
           <div class="row">
           
             <div class="col-6">
             
               <q-input
-                v-model="ph1"
+                v-model="postTitle"
                 label="Post title"
                 placeholder="Describe shortly what you need"
                 hint="mandatory"
@@ -24,7 +24,7 @@
               />
 
               <q-input
-                v-model="ph2"
+                v-model="postDescription"
                 label="Post description"
                 placeholder="give short description that you want"
                 hint="mandotory"
@@ -33,7 +33,7 @@
               />
 
               <q-input
-                v-model="ph3"
+                v-model="abandonsName"
                 label="Abandons name"
                 placeholder="add abandon people name here"
                 hint="mandotory"
@@ -42,7 +42,7 @@
               />
 
               <q-input
-                v-model="ph4"
+                v-model="age"
                 label="Age"
                 placeholder="add age here"
                 hint="mandatory"
@@ -51,7 +51,7 @@
               />
 
               <q-input
-                v-model="ph5"
+                v-model="address"
                 label="Address"
                 placeholder="add address here"
                 hint="if have any address add it here"
@@ -64,7 +64,7 @@
             <div class="col-6">
             
               <q-input
-                v-model="ph6"
+                v-model="contactNumber"
                 label="Contact number"
                 placeholder="add contact number here"
                 hint="add guardian contact number"
@@ -83,7 +83,7 @@
 
               <q-input
                 bottom-slots
-                v-model="text"
+                v-model="location"
                 label="Location"
                 counter
                 :dense="dense"
@@ -103,7 +103,7 @@
                 <template v-slot:hint> add nearest town here </template>
               </q-input>
 
-              <q-input
+              <!-- <q-input
                 @update:model-value="
                   (val) => {
                     files = val;
@@ -114,10 +114,17 @@
                 type="file"
                 hint="Add abandons photo here"
                 style="max-width: 300px; margin-bottom: 20px"
-              />
-
+              /> -->
               <q-input
-                v-model="textareaModel"
+                bottom-slots
+                v-model="photo"
+                label="Add abandons photo here"
+                counter
+                :dense="dense"
+                style="max-width: 300px; margin-bottom: 20px"
+              />
+              <q-input
+                v-model="otherDetails"
                 filled
                 clearable
                 type="textarea"
@@ -146,7 +153,6 @@
                 <q-btn
                   label="Submit"
                   type="submit"
-                  to="/finderdashf"
                   color="green"
                 />
                 <q-btn
@@ -168,21 +174,63 @@
 </template>
 
 <script>
-import { ref } from "vue";
 import LeftBarf from "./LeftBarf.vue";
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 export default {
   components: {
     LeftBarf,
   },
-  setup() {
-    return {
-      text: ref(""),
-      ph: ref(""),
-      dense: ref(false),
-      file: ref(null),
-      files: ref(null),
-    };
-  },
+  data(){
+  return {
+    abandonsName:'',
+    address:'',
+    age:'',
+    contactNumber:'',
+    location:'',
+    otherDetails:'',
+    photo:'',
+    postDescription:'',
+    postTitle:'',
+  }
+},
+methods:{
+ async addPosts(){
+    const newPost={
+      abandonsName:this.abandonsName,
+      address: this.address,
+      age: this.age,
+      contactNumber:this.contactNumber,
+      location:this.location,
+      otherDetails: this.otherDetails,
+      photo: this.photo,
+      postDescription:this.postDescription,
+      postTitle:this.postTitle,
+    }
+    
+   
+      axios({
+        method: "post",
+        url: `http://localhost:8081/posts/create`,
+        data: JSON.stringify(newPost),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then(() => {
+         Swal.fire({
+          text:"Post has been Submitted",
+          icon:"success",
+         })
+         this.$router.push({ name: "NotificationPage" });
+       
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    
+  }
+}
 };
 </script>
