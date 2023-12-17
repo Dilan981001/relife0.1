@@ -14,7 +14,7 @@
         <form>
           
           <div class="rw1 row ">
-            <div class="col">
+            <div class="col-md-6">
               <div class="txt1">
                 <p1 class="text1">Fundraise for a 
 great cause</p1><br />
@@ -34,7 +34,7 @@ great cause</p1><br />
             
           </div>  
             </div>
-            <div class="col">
+            <div class="col-md-6 col-sm-12">
               
               <div class="image5">
                 <img src="MaskGroup.png"  alt="img5" />
@@ -79,7 +79,7 @@ export default {
   background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 .form1 {
-  height: 650px;
+  height: 80%;
   width: 80%;
   background: #1d402b;
   border-color: white;
@@ -88,7 +88,7 @@ export default {
   position: relative;
   top: 50%;
   left: 50%;
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 100px;
   transform: translate(-50%, 5%);
   @media (max-width: 768px) {

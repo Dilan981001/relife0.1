@@ -9,6 +9,7 @@
 <script>
 import SigninSignup from "@/views/SigninSignup.vue";
 import SignUp from "@/views/SignUp.vue";
+import FinderDashf from "@/views/FinderDashf.vue";
 import FullDashBoard from "@/views/FullDashBoard.vue";
 import MarketPlace from "@/views/MarketPlace.vue";
 import HomePage from "@/views/HomePage.vue";
@@ -19,6 +20,9 @@ import EldersHome from "@/components/EldersHome.vue"
 import EldersCard from "@/components/Home/EldersCard.vue"
 import DonateFund from "@/components/DonateFund.vue"
 import PaymentSecure from "@/components/PaymentSecure.vue"
+import Signinprovider from "@/views/Marketplace/signinprovider.vue"
+import SignProvider from "@/views/Marketplace/SignProvider"
+
 
 export default {
   name: 'App',
@@ -49,6 +53,12 @@ export default {
      // eslint-disable-next-line vue/no-unused-components
      PaymentSecure,
      // eslint-disable-next-line vue/no-unused-components
+     Signinprovider,
+     // eslint-disable-next-line vue/no-unused-components
+     SignProvider,
+     
+     // eslint-disable-next-line vue/no-unused-components
+     FinderDashf,
 
 
   }

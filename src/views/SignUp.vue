@@ -9,7 +9,10 @@
         <div class="login-label">
           <span class="label-text">RELIFE</span>
         </div>
-
+        <div class=" row1 form-actions">
+      <q-btn class="q-mr-md-d" type="submit" label="Sign up as Finder " />
+      <q-btn class="q-mr-md-d" to="/signupprovider" label="Sign up as Provider " />
+    </div>
         <form @submit.prevent="saveData" method="post">
           <div class="form-group">
             <label for="fullname">Full Name</label>
@@ -47,6 +50,15 @@
               type="password"
               id="confirmPassword"
               v-model="confirmpassword"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Description </label>
+            <input
+              type="text"
+              id="description"
+              v-model="description"
               required
             />
           </div>
@@ -213,6 +225,7 @@ export default {
   background-color: #284b36;
   display: flex;
   flex-direction: column;
+  height: 1000px;
 }
 
 .top-panel {
@@ -310,4 +323,7 @@ export default {
     padding: 10px;
   }
 }
+.row1{
+    background: green;
+  }
 </style>

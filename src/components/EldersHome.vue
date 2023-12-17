@@ -85,7 +85,7 @@
     <div>
       <div class="full">
         <div class="row">
-          <div class="left col-12">
+          <div class="left col col-md-6">
             <div><elder-card /></div>
           </div>
         </div>
@@ -118,13 +118,16 @@ export default {
 </script>
 
 <style scoped>
+
+
+
 .filter {
   flex: 1;
   margin-right: 10px; /* Adjust the spacing as needed */
 }
 
 .filter2 {
-  padding-right: 900px;
+
   justify-content: flex;
 }
 .filter-container {
@@ -236,6 +239,9 @@ button {
   /* Set the path to your background image */
   background-repeat: no-repeat;
   /* Prevent the background image from repeating */
+  background-size: cover; /* Ensures the background covers the entire container */
+  width: 100vw; /* Sets width to 100% of the viewport width */
+ 
 }
 
 .box2 {
@@ -250,7 +256,7 @@ button {
   justify-content: center;
   margin-top: -150px;
 
-  padding:50px;
+  
   
 
 }

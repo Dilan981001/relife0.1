@@ -7,235 +7,255 @@
       <br /><br />
       <div class="row">
         <div class="card-container">
-          <div class="col">
-            <div class="card">
-              <div class="shadow shadow-offset-left-xs">
-                <center>
-                  <img src="h4.jpg" class="card-img-top" alt="Skyscrapers" />
-                </center>
-                <div class="card-main-body">
-                  <div class="card-body">
-                    <h5 class="card-title">Thudawa girls ...</h5>
 
-                    <h6>Wadduwa</h6>
-                    <p class="card-text">
-                      “Tudawe” Home is incharge of a committee of All Ceylon
-                      Buddhist Congress. We support them by providing the needs
-                      of the childrend
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <q-btn type="button" href="#" class="rec4">
-                      More Details..
-                    </q-btn>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 bg-success border-light">
-              <div class="shadow shadow-offset-left-xs">
-                <center>
-                  <img
-                    src="h2.png"
-                    class="card-img-top"
-                    alt="Los Angeles Skyscrapers"
-                  />
-                </center>
-                <div class="card-main-body">
-                  <div class="card-body">
-                    <h5 class="card-title">Niclula ..</h5>
-                    <h6>Trincomalee</h6>
-                    <p class="card-text">
-                      Vitae sapien pellentesque habitant morbi nunc. Viverra
-                      aliquet porttitor rhoncus libero justo laoreet sit amet
-                      vitae.
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <q-btn type="button" href="#" class="rec4">
-                      More Details..
-                    </q-btn>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 bg-success border-light">
-              <div class="shadow shadow-offset-left-xs">
-                <center>
-                  <img
-                    src="h1.jpeg"
-                    class="card-img-top"
-                    alt="Palm Springs Road"
-                  />
-                </center>
-                <div class="card-main-body">
-                  <div class="card-body">
-                    <h5 class="card-title">Jinananda v..</h5>
-                    <h6>Anuradhapura</h6>
-                    <p class="card-text">
-                      Begun in 1986 The Jinananda Childrens Development Centre,
-                      is an initiative of Rev . Urumuththe Sugathananda Thero
-                      and ....
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <q-btn type="button" href="#" class="rec4">
-                      More Details..
-                    </q-btn>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 bg-success border-light">
-              <div class="shadow shadow-offset-left-xs">
-                <center>
-                  <img
-                    src="h3.jpeg"
-                    class="card-img-top"
-                    alt="Palm Springs Road"
-                  />
-                </center>
-                <div class="card-main-body">
-                  <div class="card-body">
-                    <h5 class="card-title">Tikiri Sewana..</h5>
-                    <h6>Kandy</h6>
-                    <p class="card-text">
-                      Vitae sapien pellentesque habitant morbi nunc. Viverra
-                      aliquet porttitor rhoncus libero justo laoreet sit amet
-                      vitae.
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <q-btn type="button" href="#" class="rec4">
-                      More Details..
-                    </q-btn>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+<div class="col-lg-2 col-md-6  ">
+  <div class="card">
+    <div class="shadow shadow-offset-left-xs">
+      <center>
+        <img src="h4.jpg" class="card-img-top" alt="Skyscrapers" />
+      </center>
+      <div class="card-main-body">
+        <div class="card-body">
+          <h5 class="card-title">Thudawa girls ...</h5>
+
+          <h6>Wadduwa</h6>
+          <p class="card-text">
+            “Tudawe” Home is incharge of a committee of All Ceylon
+            Buddhist Congress. We support them by providing the needs of
+            the childrend
+          </p>
+        </div>
+        <div class="card-footer">
+          <q-btn type="button" href="#" class="rec4">
+            More Details..
+          </q-btn>
         </div>
       </div>
-      <div class="card-container">
-        <div class="col">
-          <div class="card">
-            <div class="shadow shadow-offset-left-xs">
-              <center>
-                <img src="h4.jpg" class="card-img-top" alt="Skyscrapers" />
-              </center>
-              <div class="card-main-body">
-                <div class="card-body">
-                  <h5 class="card-title">Thudawa girls ...</h5>
+    </div>
+  </div>
+</div>
 
-                  <h6>Wadduwa</h6>
-                  <p class="card-text">
-                    “Tudawe” Home is incharge of a committee of All Ceylon
-                    Buddhist Congress. We support them by providing the needs of
-                    the childrend
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <q-btn type="button" href="#" class="rec4">
-                    More Details..
-                  </q-btn>
-                </div>
-              </div>
-            </div>
-          </div>
+
+<div class="col-md-6">
+  <div class="card h-100 bg-success border-light">
+    <div class="shadow shadow-offset-left-xs">
+      <center>
+        <img
+          src="h2.png"
+          class="card-img-top"
+          alt="Los Angeles Skyscrapers"
+        />
+      </center>
+      <div class="card-main-body">
+        <div class="card-body">
+          <h5 class="card-title">Niclula ..</h5>
+          <h6>Trincomalee</h6>
+          <p class="card-text">
+            Vitae sapien pellentesque habitant morbi nunc. Viverra
+            aliquet porttitor rhoncus libero justo laoreet sit amet
+            vitae.
+          </p>
         </div>
-        <div class="col">
-          <div class="card h-100 bg-success border-light">
-            <div class="shadow shadow-offset-left-xs">
-              <center>
-                <img
-                  src="h2.png"
-                  class="card-img-top"
-                  alt="Los Angeles Skyscrapers"
-                />
-              </center>
-              <div class="card-main-body">
-                <div class="card-body">
-                  <h5 class="card-title">Niclula ..</h5>
-                  <h6>Trincomalee</h6>
-                  <p class="card-text">
-                    Vitae sapien pellentesque habitant morbi nunc. Viverra
-                    aliquet porttitor rhoncus libero justo laoreet sit amet
-                    vitae.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <q-btn type="button" href="#" class="rec4">
-                    More Details..
-                  </q-btn>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="card-footer">
+          <q-btn type="button" href="#" class="rec4">
+            More Details..
+          </q-btn>
         </div>
-        <div class="col">
-          <div class="card h-100 bg-success border-light">
-            <div class="shadow shadow-offset-left-xs">
-              <center>
-                <img
-                  src="h1.jpeg"
-                  class="card-img-top"
-                  alt="Palm Springs Road"
-                />
-              </center>
-              <div class="card-main-body">
-                <div class="card-body">
-                  <h5 class="card-title">Jinananda v..</h5>
-                  <h6>Anuradhapura</h6>
-                  <p class="card-text">
-                    Begun in 1986 The Jinananda Childrens Development Centre, is
-                    an initiative of Rev . Urumuththe Sugathananda Thero and
-                    ....
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <q-btn type="button" href="#" class="rec4">
-                    More Details..
-                  </q-btn>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-6">
+  <div class="card h-100 bg-success border-light">
+    <div class="shadow shadow-offset-left-xs">
+      <center>
+        <img
+          src="h1.jpeg"
+          class="card-img-top"
+          alt="Palm Springs Road"
+        />
+      </center>
+      <div class="card-main-body">
+        <div class="card-body">
+          <h5 class="card-title">Jinananda v..</h5>
+          <h6>Anuradhapura</h6>
+          <p class="card-text">
+            Begun in 1986 The Jinananda Childrens Development Centre, is
+            an initiative of Rev . Urumuththe Sugathananda Thero and
+            ....
+          </p>
         </div>
-        <div class="col">
-          <div class="card h-100 bg-success border-light">
-            <div class="shadow shadow-offset-left-xs">
-              <center>
-                <img
-                  src="h3.jpeg"
-                  class="card-img-top"
-                  alt="Palm Springs Road"
-                />
-              </center>
-              <div class="card-main-body">
-                <div class="card-body">
-                  <h5 class="card-title">Tikiri Sewana..</h5>
-                  <h6>Kandy</h6>
-                  <p class="card-text">
-                    Vitae sapien pellentesque habitant morbi nunc. Viverra
-                    aliquet porttitor rhoncus libero justo laoreet sit amet
-                    vitae.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <q-btn type="button" href="#" class="rec4">
-                    More Details..
-                  </q-btn>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="card-footer">
+          <q-btn type="button" href="#" class="rec4">
+            More Details..
+          </q-btn>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-6">
+  <div class="card h-100 bg-success border-light">
+    <div class="shadow shadow-offset-left-xs">
+      <center>
+        <img
+          src="h3.jpeg"
+          class="card-img-top"
+          alt="Palm Springs Road"
+        />
+      </center>
+      <div class="card-main-body">
+        <div class="card-body">
+          <h5 class="card-title">Tikiri Sewana..</h5>
+          <h6>Kandy</h6>
+          <p class="card-text">
+            Vitae sapien pellentesque habitant morbi nunc. Viverra
+            aliquet porttitor rhoncus libero justo laoreet sit amet
+            vitae.
+          </p>
+        </div>
+        <div class="card-footer">
+          <q-btn type="button" href="#" class="rec4">
+            More Details..
+          </q-btn>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      </div>
+
+
+
+
+      <div class="row">
+        <div class="card-container">
+
+<div class="col-md-6 ">
+  <div class="card">
+    <div class="shadow shadow-offset-left-xs">
+      <center>
+        <img src="h4.jpg" class="card-img-top" alt="Skyscrapers" />
+      </center>
+      <div class="card-main-body">
+        <div class="card-body">
+          <h5 class="card-title">Thudawa girls ...</h5>
+
+          <h6>Wadduwa</h6>
+          <p class="card-text">
+            “Tudawe” Home is incharge of a committee of All Ceylon
+            Buddhist Congress. We support them by providing the needs of
+            the childrend
+          </p>
+        </div>
+        <div class="card-footer">
+          <q-btn type="button" href="#" class="rec4">
+            More Details..
+          </q-btn>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-6">
+  <div class="card h-100 bg-success border-light">
+    <div class="shadow shadow-offset-left-xs">
+      <center>
+        <img
+          src="h2.png"
+          class="card-img-top"
+          alt="Los Angeles Skyscrapers"
+        />
+      </center>
+      <div class="card-main-body">
+        <div class="card-body">
+          <h5 class="card-title">Niclula ..</h5>
+          <h6>Trincomalee</h6>
+          <p class="card-text">
+            Vitae sapien pellentesque habitant morbi nunc. Viverra
+            aliquet porttitor rhoncus libero justo laoreet sit amet
+            vitae.
+          </p>
+        </div>
+        <div class="card-footer">
+          <q-btn type="button" href="#" class="rec4">
+            More Details..
+          </q-btn>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-6">
+  <div class="card h-100 bg-success border-light">
+    <div class="shadow shadow-offset-left-xs">
+      <center>
+        <img
+          src="h1.jpeg"
+          class="card-img-top"
+          alt="Palm Springs Road"
+        />
+      </center>
+      <div class="card-main-body">
+        <div class="card-body">
+          <h5 class="card-title">Jinananda v..</h5>
+          <h6>Anuradhapura</h6>
+          <p class="card-text">
+            Begun in 1986 The Jinananda Childrens Development Centre, is
+            an initiative of Rev . Urumuththe Sugathananda Thero and
+            ....
+          </p>
+        </div>
+        <div class="card-footer">
+          <q-btn type="button" href="#" class="rec4">
+            More Details..
+          </q-btn>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-6">
+  <div class="card h-100 bg-success border-light">
+    <div class="shadow shadow-offset-left-xs">
+      <center>
+        <img
+          src="h3.jpeg"
+          class="card-img-top"
+          alt="Palm Springs Road"
+        />
+      </center>
+      <div class="card-main-body">
+        <div class="card-body">
+          <h5 class="card-title">Tikiri Sewana..</h5>
+          <h6>Kandy</h6>
+          <p class="card-text">
+            Vitae sapien pellentesque habitant morbi nunc. Viverra
+            aliquet porttitor rhoncus libero justo laoreet sit amet
+            vitae.
+          </p>
+        </div>
+        <div class="card-footer">
+          <q-btn type="button" href="#" class="rec4">
+            More Details..
+          </q-btn>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
       </div>
     </div>
   </div>
@@ -248,9 +268,11 @@
   background-image: url("/public/Vector 40.png"), url("/public/Vector 7.png"),
     url("/public/Vector 8.png"), url("/public/Vector 14.png"),
     url("/public/Vector 19.png"), url("/public/Vector 18.png"); /* Set the path to your background image */
-
+    background-size: cover; /* Ensures the background covers the entire container */
+  width: 100vw;
   background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
+
 .col2 {
   margin-top: 20px;
 }
@@ -289,24 +311,8 @@
   display: flex;
   justify-content: space-between;
 }
-.col {
-  padding-left: 100px;
-  padding-right: 50px;
-}
-.row {
-  margin-right: 100px;
-}
 
-.col5 {
-  margin-left: -200px;
-  margin-top: 90px;
-  margin-right: -50px;
-}
-.col4 {
-  padding-left: 100px;
-  padding-right: 100px;
-  text-align: center;
-}
+
 .q-mr-md-d-d {
   font-weight: bold;
   background: #284b36;
@@ -379,8 +385,7 @@
   gap: 20px;
   margin-top: 30px;
   flex-direction: row;
-
-  margin-right: 100px;
+  margin-left: 100px;
 }
 .h1 {
   border-left-width: 20px;
@@ -421,9 +426,9 @@ h2 {
   border: 8px solid #284b36;
   width: 200px;
   height: 200px;
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     width: 100%;
-  }
+  } */
 }
 .card-main-body {
   margin-top: -40px;
@@ -444,6 +449,8 @@ h2 {
   @media (max-width: 768px) {
     width: 100%;
   }
+  margin-right: 65px;
+  margin-top: 40px;
 }
 .card-text {
   margin-top: -30px;
@@ -627,6 +634,7 @@ p4 {
   }
   .row {
     flex-direction: column;
+   
   }
 }
 
