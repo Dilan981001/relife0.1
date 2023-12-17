@@ -10,8 +10,8 @@
           <span class="label-text">RELIFE</span>
         </div>
         <div class=" row1 form-actions">
-      <q-btn class="q-mr-md-d" type="submit" label="Sign up as Finder " />
-      <q-btn class="q-mr-md-d" to="/signupprovider" label="Sign up as Provider " />
+      <q-btn class="q-mr-md-d" type="submit" label="Finder " />
+      <q-btn class="q-mr-md-d" to="/signupprovider" label="Provider " />
     </div>
         <form @submit.prevent="saveData" method="post">
           <div class="form-group">
@@ -323,7 +323,5 @@ export default {
     padding: 10px;
   }
 }
-.row1{
-    background: green;
-  }
+
 </style>

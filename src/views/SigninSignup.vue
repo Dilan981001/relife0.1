@@ -7,8 +7,8 @@
         </div>
 
         <div class=" row1 form-actions">
-      <q-btn class="q-mr-md-d" type="submit" label="Sign in as Finder " />
-      <q-btn class="q-mr-md-d" to="/signinprovider" label="Sign in as Provider " />
+      <q-btn class="q-mr-md-d" type="submit" label="Finder " />
+      <q-btn class="q-mr-md-d" to="/signinprovider" label="Provider " />
     </div>
 
        <form @submit.prevent="LoginData" method="post">
@@ -270,7 +270,5 @@ axios.post("http://localhost:8081/user/login", dataToSend)
     margin: 4px 0;
   }
 }
-.row1{
-  background: green;
-}
+
 </style>
