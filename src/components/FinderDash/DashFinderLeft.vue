@@ -82,7 +82,7 @@
                               </div>
 
                              <div class="row">
-                              <q-btn color="green" class="full-width q-mt-xl q-mb-md" label="Create Post" />
+                              <q-btn color="green" class="full-width q-mt-xl q-mb-md" label="Create Post" to="/formposts"/>
                              </div>
                             </div>
                         </div>
