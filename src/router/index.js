@@ -25,7 +25,8 @@ import AdminAddProduct from '@/views/Marketplace/Product/AdminAddProduct.vue';
 import AdminEditProduct from '@/views/Marketplace/Product/AdminEditProduct.vue';
 import CategoryPage from '@/views/Marketplace/Category/CategoryPage.vue';
 import AdminPage from '@/views/Marketplace/AdminPage.vue';
-import Signinprovider from "@/views/Marketplace/signinprovider.vue"
+import Signinprovider from "@/views/Marketplace/signinprovider.vue";
+import FinderDashf from "@/views/FinderDashf.vue";
 
 const routes = [
   {
@@ -41,6 +42,11 @@ const routes = [
     path: '/signup',
     name: 'SignUp',
     component: SignUp
+  },
+  {
+    path: '/finderdashf',
+    name: 'FinderDashf',
+    component: FinderDashf
   },
   {
     path: '/fulldashboard',

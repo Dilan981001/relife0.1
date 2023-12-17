@@ -9,6 +9,7 @@
 <script>
 import SigninSignup from "@/views/SigninSignup.vue";
 import SignUp from "@/views/SignUp.vue";
+import FinderDashf from "@/views/FinderDashf.vue";
 import FullDashBoard from "@/views/FullDashBoard.vue";
 import MarketPlace from "@/views/MarketPlace.vue";
 import HomePage from "@/views/HomePage.vue";
@@ -51,6 +52,8 @@ export default {
      PaymentSecure,
      // eslint-disable-next-line vue/no-unused-components
      Signinprovider,
+     // eslint-disable-next-line vue/no-unused-components
+     FinderDashf,
 
 
   }
