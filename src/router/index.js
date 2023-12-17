@@ -28,6 +28,7 @@ import AdminPage from '@/views/Marketplace/AdminPage.vue';
 import Signinprovider from "@/views/Marketplace/signinprovider.vue";
 import FinderDashf from "@/views/FinderDashf.vue";
 import SignProvider from "@/views/Marketplace/SignProvider"
+import OrderPaymentVue from '@/components/Marketplace/OrderPayment.vue';
 
 
 const routes = [
@@ -154,6 +155,11 @@ const routes = [
     path: '/signupprovider',
     name: 'SignProvider  ',
     component: SignProvider 
+  },
+  {
+    path: '/order',
+    name: 'order  ',
+    component: OrderPaymentVue 
   },
 
 
