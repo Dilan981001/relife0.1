@@ -1,5 +1,7 @@
-<template>
- 
+<template class="container">
+<div class="row">
+ <NavBar/>
+</div>
 <div>
     <div class="q-pa-md">
       <div class="row items-start">
@@ -46,9 +48,14 @@
 import axios from 'axios';
 import { mapGetters } from 'vuex';
 import Swal from 'sweetalert2'
+import NavBar from "@/components/Marketplace/NavBar.vue";
 
-export default{
-    name :"ViewProductPage",
+
+export default {
+    name: "ViewProductPage",
+    components: {
+      NavBar,
+    },
     data(){
         return {
             productId :this.$route.params.productId,
@@ -115,4 +122,10 @@ computed: mapGetters({
 
 }
 </script>
+
+<style scoped>
+.container{
+  background-color:#284b36;
+}
+</style>
 
