@@ -47,9 +47,9 @@
 
       <q-card class="my-card text-black q-mt-lg">
         <q-card-section class="row justify-evenly">
-          <div class="text-h6">Total Quantity : {{ cartTotalCountState }}</div>
+          <div class="text-h6">Total Quantity : {{ totalQuantity }}</div>
           <div class="text-h6">Grand Total : Rs {{ totalcost }}</div>
-          <q-btn class="q-mb-lg" label="Confirm Order" dense color="blue" />
+          <q-btn class="q-mb-lg" label="Confirm Order" dense color="blue" to="/order" />
         </q-card-section>
       </q-card>
     </div>
@@ -65,6 +65,7 @@ export default{
       cartItems:[],
       token:null,
       totalcost:0,
+      totalQuantity:0,
       columns: [
         {
           name: "id",
@@ -102,9 +103,12 @@ export default{
       axios.get(`http://localhost:8081/cart/?token=${this.token}`)
       .then(res=>{
         const result = res.data;
-        console.log(result);
+       
         this.cartItems=result.cartItems;
         this.totalcost=result.totalCost;
+        this.totalQuantity = result.cartItems.reduce((total, item) => total + item.quantity, 0);
+
+     
       }).catch(err=>{
         console.log(err);
       })
