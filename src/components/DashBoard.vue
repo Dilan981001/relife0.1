@@ -121,11 +121,11 @@
             <div class="text-overline">Marketplace</div>
 
             <div class="q-ma-md q-gutter-sm full-width">
-              <q-btn color="green"  label="Admin Page" to="/finderdashf" />
+              <q-btn color="green"  label="Admin Page" to="/admin" />
             </div>
 
             <div class="q-pa-sm q-gutter-sm">
-              <q-btn color="green"  label="Add Product" to="/finderdashf" />
+              <q-btn color="green"  label="Add category" to="/admin/category" />
             </div>
 
           </q-card>
