@@ -9,6 +9,16 @@
 
     <div class="box2"></div>
 
+          <q-btn
+          color="green"
+          icon="chevron_left"
+          label="Back to Dashboard"
+          to="/fulldashboard"
+          class="q-mt-xl q-mb-xl"
+          style="margin-left:100px;"
+        />
+        
+
     <div class="row">
       <div class="col-5"></div>
       <div class="column q-mt-lg">
@@ -34,7 +44,8 @@
 
 <script>
 
-import NavBar from "@/components/NavBar.vue";
+import NavBar from "@/components/Marketplace/NavBar.vue";
+
 export default {
  components:{
   NavBar,
@@ -44,15 +55,10 @@ export default {
 
 <style scoped>
 
-body, html {
-  margin: 0;
-  padding: 0;
-  background-color: #284b36;
-}
 
 .container {
   position: relative;
-  background-color: #284b36;
+  
 }
 
 .box2 {

@@ -1,4 +1,8 @@
 <template>
+<div class="row">
+ <NavBar/>
+</div>
+
   <div class="column items-center justify-center q-mt-lg">
     Add Caregory
     <div class="q-pa-md bg-red q-mt-lg" style="max-width: 400px">
@@ -33,7 +37,13 @@
 <script >
 import axios from 'axios';
 import Swal from 'sweetalert2';
-export default{
+import NavBar from "@/components/Marketplace/NavBar.vue";
+
+export default {
+
+components: {
+        NavBar,
+    },
 data(){
   return {
     categoryName:'',
