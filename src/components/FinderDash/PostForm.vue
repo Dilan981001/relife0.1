@@ -11,6 +11,7 @@
         <div class="q-pa-md q-mx-md">
           <div class="row">
             <div class="col-6">
+            <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
               <q-input
                 v-model="ph1"
                 label="Post title"
@@ -55,9 +56,11 @@
                 :dense="dense"
                 style="max-width: 300px"
               />
+            </q-form>
             </div>
 
             <div class="col-6">
+            <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
               <q-input
                 v-model="ph"
                 label="Contact number"
@@ -123,6 +126,7 @@
                 @keydown="processTextareaFill"
                 @focus="processTextareaFill"
               />
+            </q-form>
             </div>
 
             <div class="row">
