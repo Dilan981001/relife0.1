@@ -29,14 +29,14 @@
           v-bind:class="{ hide: hide }"
           class="row justify-center item-center"
         >
-          <q-btn
+          <!-- <q-btn
             color="white"
             text-color="black"
             label="Admin"
             to="/admin"
             size="70%"
             class="text-weight-bold q-ml-md"
-          />
+          /> -->
           <q-btn
             v-if="!token"
             color="white"
