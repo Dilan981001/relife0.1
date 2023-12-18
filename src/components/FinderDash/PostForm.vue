@@ -9,8 +9,9 @@
 
       <q-card class="q-mx-md q-pa-md" bordered>
         <div class="q-pa-md q-mx-md">
+        <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
           <div class="row">
-          <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
+          
             <div class="col-6">
             
               <q-input
@@ -157,8 +158,9 @@
                 />
               </div>
             </div>
-            </q-form>
+            
           </div>
+          </q-form>
         </div>
       </q-card>
     </q-page-container>
