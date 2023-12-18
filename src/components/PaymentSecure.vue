@@ -192,10 +192,12 @@
         </div>
       </div>
     </div>
+    <div>
+  <page-footer/>
+</div>
   </div>
-  <div>
-    <page-footer />
-  </div>
+
+
 </template>
 
 <script>

@@ -105,7 +105,7 @@ axios.post("http://localhost:8081/user/login", dataToSend)
           text:"Login Success",
           icon:"success",
          })
-            this.$router.push('/fulldashboard');
+            this.$router.push('/finderdashf');
             localStorage.setItem("token",response.data.token);
           }
         })
