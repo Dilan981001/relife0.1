@@ -1,4 +1,8 @@
 <template>
+<div class="row">
+ <NavBar/>
+</div>
+
 <div class="row justify-end q-mt-lg q-mr-md">
     
     <q-btn label="Add Product" to="/admin/product/new" color="blue" dense/>
@@ -14,9 +18,12 @@
 
 <script>
 import ProductBox from '@/components/Marketplace/ProductBox.vue';
-export default{
+import NavBar from "@/components/Marketplace/NavBar.vue";
+
+export default {
     components:{
-        ProductBox
+        ProductBox,
+        NavBar
     }
 }
 

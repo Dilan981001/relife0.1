@@ -1,7 +1,11 @@
 <template>
+<div class="row">
+ <NavBar/>
+</div>
+
     <div class="column items-center justify-center q-mt-lg">
       Edit Product
-      <div class="q-pa-md bg-red q-mt-lg" style="max-width: 400px">
+      <div class="q-pa-md bg-green q-mt-lg" style="width: 600px; border-radius: 10px;">
         <q-form class="q-gutter-md" @submit="editProduct()">
          
           <select v-model="product.categoryId"  >
@@ -39,9 +43,23 @@
             filled
             label="Price "
           />
-          <div>
-            <q-btn label="Submit" type="submit" color="primary" />
-          </div>
+          <div class="row">
+        <div class="col-6">
+        <div>
+          <q-btn label="Submit" type="submit" color="primary" to="/admin/product"/>
+        </div>
+
+        </div>
+
+        <div class="col-6">
+
+        <div style="margin-left:-150px;"  >
+          <q-btn label="Cancel" type="submit" color="red" to="/admin/product"/>
+        </div>
+
+        </div>
+
+       </div>
         </q-form>
       </div>
 
@@ -50,9 +68,15 @@
   
   <script>
   
-  import axios from 'axios';
+import axios from 'axios';
 import { mapGetters } from 'vuex';
+import NavBar from "@/components/Marketplace/NavBar.vue";
   export default {
+
+    components: {
+        NavBar
+    },
+
       data(){
           return {
               product:{},
