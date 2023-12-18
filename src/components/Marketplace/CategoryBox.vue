@@ -26,8 +26,8 @@
         v-if="$route.name === 'CategoryPage'"
               color="primary"
               icon="add_circle"
-              label="ADD TO CART"
-              @click="addToCart(product.id)"
+              label="EDIT"
+              @click="EditCategory(category.id)"
             />
      
     
@@ -56,6 +56,9 @@
             .catch(err=>{
                 console.log(err);
             })
+        },
+        EditCategory(id){
+          this.$router.push({ name: "AdminEditProduct", params: { id: id } });
         }
     },
     mounted(){
