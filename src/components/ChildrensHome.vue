@@ -127,6 +127,7 @@ export default {
 .filter2 {
  
   justify-content: flex;
+  margin-right: 500px;
 }
 .filter-container {
   display: flex;

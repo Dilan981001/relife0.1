@@ -9,6 +9,82 @@
       <nav-bar />
     </div>
 
+
+
+    <div class="box2"></div>
+
+<div class="search-bar">
+  <!-- Placeholder for the search bar -->
+  <div class="search-input">
+    <input type="text" placeholder="Search..." />
+    <button><i class="bi bi-search"></i></button>
+  </div>
+
+  <!-- Filter icon and dropdown -->
+  <div class="filter">
+    <div class="q-pa-md">
+      <q-btn-dropdown outline style="color: white" label="Filter by Age">
+        <q-list>
+          <q-item clickable v-close-popup @click="onItemClick">
+            <q-item-section>
+              <q-item-label>01-10</q-item-label>
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-close-popup @click="onItemClick">
+            <q-item-section>
+              <q-item-label>10-18</q-item-label>
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-close-popup @click="onItemClick">
+            <q-item-section>
+              <q-item-label>18-25</q-item-label>
+            </q-item-section>
+          </q-item>
+        </q-list>
+      </q-btn-dropdown>
+    </div>
+  </div>
+  <div class="filter2">
+    <div class="q-pa-md">
+      <q-btn-dropdown outline style="color: white" label="Filter by City">
+        <q-list>
+          <q-item clickable v-close-popup @click="onItemClick">
+            <q-item-section>
+              <q-item-label>Anuradhapura</q-item-label>
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-close-popup @click="onItemClick">
+            <q-item-section>
+              <q-item-label>Jaffna</q-item-label>
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-close-popup @click="onItemClick">
+            <q-item-section>
+              <q-item-label>Colombo</q-item-label>
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-close-popup @click="onItemClick">
+            <q-item-section>
+              <q-item-label>Galle</q-item-label>
+            </q-item-section>
+          </q-item>
+        </q-list>
+      </q-btn-dropdown>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
     <div class="box2"></div>
 
     <link
@@ -17,70 +93,9 @@
     />
 
     <div class="two-column-layout">
-      <div class="column-left">
-        <div class="search-bar">
-          <!-- Placeholder for the search bar -->
-          <div class="search-input">
-            <input type="text" placeholder="Search..." />
-            <button><i class="bi bi-search"></i></button>
-          </div>
-
-          <!-- Filter icon and dropdown -->
-          <div class="filter">
-            <div class="filter-icon">
-              <button @click="toggleDropdown">
-                <i class="bi bi-funnel"></i>
-                {{ showDropdown ? "Close Filter" : "Filter City" }}
-              </button>
-              <div class="city-dropdown" v-show="showDropdown">
-                <!-- Add your city names here as dropdown items -->
-                <div class="city-item">Anuradhapura</div>
-                <div class="city-item">Colombo</div>
-                <div class="city-item">Hputhale</div>
-                <div class="city-item">Mannaram</div>
-                <div class="city-item">Sigiriya</div>
-                <div class="city-item">Trinco</div>
-                <!-- Add more city items as needed -->
-              </div>
-            </div>
-          </div>
-          <div class="filter2">
-            <div class="filter-icon">
-              <button @click="toggleDropdown">
-                <i class="bi bi-funnel"></i>
-                {{ showDropdown ? "Close Filter" : "Filter Age" }}
-              </button>
-              <div class="city-dropdown" v-show="showDropdown">
-                <!-- Add your city names here as dropdown items -->
-                <div class="city-item">0 - 1</div>
-                <div class="city-item">1 - 5</div>
-                <div class="city-item">5 - 15</div>
-                <div class="city-item">15 - 30</div>
-                <div class="city-item">30 - 50</div>
-                <div class="city-item">50 to up</div>
-                <!-- Add more city items as needed -->
-              </div>
-            </div>
-          </div>
-          <div class="filter3">
-            <div class="filter-icon">
-              <button @click="toggleDropdown">
-                <i class="bi bi-funnel"></i>
-                {{ showDropdown ? "Close Filter" : "Filter Category" }}
-              </button>
-              <div class="city-dropdown" v-show="showDropdown">
-                <!-- Add your city names here as dropdown items -->
-                <div class="city-item">Elders home</div>
-                <div class="city-item">Childrens home</div>
-
-                <!-- Add more city items as needed -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     
       <div class="column-right">
-<div class="row">
+<div class= "row" >
   <div class="col">
     <q-card class="my-card" flat bordered>
       <q-img src="../../public/h1.jpeg"  height="200px"/>
@@ -369,12 +384,6 @@
     </q-card>
   </div>
 </div>
-
-
-   
-
-    
-
       </div>
     </div>
 
@@ -400,6 +409,20 @@ export default {
     NavBar,
     PageFooter,
   },
+  data() {
+    return {
+      showDropdown: false, // Initially hide the dropdown
+      showAgeDropdown: false,
+    };
+  },
+  methods: {
+    toggleDropdown() {
+      this.showDropdown = !this.showDropdown;
+    },
+    toggleAgeDropdown() {
+      this.showAgeDropdown = !this.showAgeDropdown;
+    },
+  },
 };
 </script>
 
@@ -411,18 +434,17 @@ export default {
 }
 .filter {
   flex: 1;
-  margin-top: 50px;
+  
 }
 
 .filter2 {
   padding-right: 0px;
   justify-content: flex;
-  margin-top: 50px;
+  margin-right: 500px;
 }
 .filter3 {
   padding-right: 0px;
   justify-content: flex;
-  margin-top: 50px;
 }
 .filter-container {
   display: flex;
@@ -551,6 +573,7 @@ button {
   padding: 20px;
   background-color: #284b36;
   color: white;
+  margin-left: 200px;
 }
 
 .card-img-top {
@@ -674,6 +697,106 @@ h2 {
   color: white;
   font-weight: lighter;
   text-align: justify;
+}
+
+
+
+
+.filter {
+  flex: 1;
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.filter2 {
+ 
+  justify-content: flex;
+}
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+/* Filter icon and button styles */
+/* Filter icon and button styles */
+.filter-icon,
+.filter2-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.filter-icon button,
+.filter2-icon button {
+  background-color: #284b3600;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Adjust the spacing as needed */
+}
+
+.filter-icon i,
+.filter2-icon i {
+  margin-right: 5px;
+}
+
+/* Dropdown styles */
+.city-dropdown,
+.age-dropdown {
+  position: absolute;
+  top: 100%; /* Place it below the filter icon */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+}
+
+.city-item,
+.age-item {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Show the dropdown when the button is clicked */
+.filter-icon button:focus + .city-dropdown,
+.filter2-icon button:focus + .age-dropdown,
+.city-dropdown:hover,
+.age-dropdown:hover {
+  display: block;
+}
+
+.search-bar {
+  margin-left: 50px;
+  text-align: center;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 100px;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  flex: 1; /* Allow it to grow and take available space */
+  max-width: 300px; /* Adjust the maximum width as needed */
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+input[type="text"] {
+  border: 2px solid #ffffff; /* Change the border style and color here */
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  border-radius: 100px;
+  margin-right: 10px; /* Adjust the spacing as needed */
 }
 
 
