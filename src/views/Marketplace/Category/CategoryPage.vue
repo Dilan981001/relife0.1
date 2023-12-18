@@ -1,5 +1,9 @@
 
 <template>
+<div class="row">
+ <NavBar/>
+</div>
+
   <div class="container row justify-center q-pt-lg" >
     <q-btn
         v-if="$route.name === 'CategoryPage'"
@@ -21,10 +25,13 @@
   
   <script>
   import CategoryBox from '@/components/Marketplace/CategoryBox.vue';
+  import NavBar from "@/components/Marketplace/NavBar.vue";
+
   export default {
     name: "CategoryPage",
     components: {
         CategoryBox,
+        NavBar
     },
   };
   </script>
