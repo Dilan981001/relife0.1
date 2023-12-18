@@ -1,8 +1,6 @@
 <template>
   <div class="container">
 
-
-   
       <NavBar />
     
     <div class="box1"></div>

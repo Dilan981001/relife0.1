@@ -10,8 +10,9 @@
       <q-card class="q-mx-md q-pa-md" bordered>
         <div class="q-pa-md q-mx-md">
           <div class="row">
+          <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
             <div class="col-6">
-            <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
+            
               <q-input
                 v-model="ph1"
                 label="Post title"
@@ -40,7 +41,7 @@
               />
 
               <q-input
-                v-model="ph"
+                v-model="ph4"
                 label="Age"
                 placeholder="add age here"
                 hint="mandatory"
@@ -49,20 +50,20 @@
               />
 
               <q-input
-                v-model="ph"
+                v-model="ph5"
                 label="Address"
                 placeholder="add address here"
                 hint="if have any address add it here"
                 :dense="dense"
                 style="max-width: 300px"
               />
-            </q-form>
+            
             </div>
 
             <div class="col-6">
-            <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
+            
               <q-input
-                v-model="ph"
+                v-model="ph6"
                 label="Contact number"
                 placeholder="add contact number here"
                 hint="add guardian contact number"
@@ -71,7 +72,7 @@
               />
 
               <q-input
-                v-model="ph"
+                v-model="ph7"
                 label="Email Address"
                 placeholder="add email here"
                 hint="Add guardian email here"
@@ -92,7 +93,7 @@
                 </template>
                 <template v-slot:append>
                   <q-icon
-                    name="close"
+                    
                     @click="text = ''"
                     class="cursor-pointer"
                   />
@@ -126,7 +127,7 @@
                 @keydown="processTextareaFill"
                 @focus="processTextareaFill"
               />
-            </q-form>
+            
             </div>
 
             <div class="row">
@@ -156,6 +157,7 @@
                 />
               </div>
             </div>
+            </q-form>
           </div>
         </div>
       </q-card>
